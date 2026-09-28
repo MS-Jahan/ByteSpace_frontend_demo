@@ -63,9 +63,9 @@
 - [x] Push `main` and `feat/bytespace-frontend` to the private GitHub repository.
 - [x] Open PR `feat/bytespace-frontend` → `main`: [#1 — Build responsive ByteSpace learning frontend](https://github.com/MS-Jahan/ByteSpace_New_frontend_demo/pull/1).
 - [x] Add a GitHub Actions CI workflow to run `npm ci`, typecheck, lint, tests, and the production build on pushes and PRs.
-- [x] Verify both PR-triggered and branch-push workflow runs pass, alongside GitGuardian; PR #1 reports a clean merge state.
-- [x] Upgrade checkout/setup-node actions to current major releases after GitHub flagged the old runtime as deprecated.
-- [ ] Confirm the maintenance run passes and check whether the action-runtime warning is resolved.
+- [x] Verify both PR-triggered and branch-push workflow runs pass on the updated feature commit, alongside GitGuardian; PR #1 reports a clean merge state.
+- [x] Upgrade checkout/setup-node actions to current major releases; the deprecated Node 20 action-runtime warning is resolved.
+- [x] Confirm the maintenance run passes. GitHub's only remaining workflow annotation is an informational notice about the future `ubuntu-latest` image migration.
 
 ## Acceptance criteria
 

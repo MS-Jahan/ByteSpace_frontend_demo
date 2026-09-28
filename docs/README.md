@@ -50,4 +50,4 @@ npm test
 npm run build
 ```
 
-Automated tests cover routes, search/category behavior, auth validation and demo feedback, newsletter non-submission, and extracted asset/manifest integrity. Browser review across desktop/tablet/mobile is separately tracked in `docs/plan.md`.
+Automated tests cover routes, search/category behavior, auth validation and demo feedback, newsletter non-submission, and extracted asset/manifest integrity. GitHub Actions runs the same typecheck, lint, test, and production-build commands on pushes to `main` / `feat/bytespace-frontend` and pull requests to `main`. Browser review across desktop/tablet/mobile is separately tracked in `docs/plan.md`.

@@ -49,10 +49,11 @@
 - [x] Run `npm run lint` — passed after aligning the flat ESLint config with the installed React Hooks plugin.
 - [x] Run `npm test` — passed (2 test files, 8 tests).
 - [x] Run `npm run build` — passed.
-- [x] Inspect the live browser preview at 1440px desktop and 390px mobile widths; landing and auth routes render without horizontal overflow.
+- [x] Re-run `npm run typecheck`, `npm run lint`, `npm test`, and `npm run build` after restoring dependencies from the npm lockfile — passed (8 tests).
+- [x] Inspect the live browser preview at 1440px desktop, 768px tablet, and 390px/320px mobile widths; landing and auth routes render without horizontal overflow.
 - [x] Confirm all 12 referenced page images and the Poppins, Satoshi, and Clash Display web fonts load; no runtime console errors observed.
 - [x] Inspect route headings, forms, accessible labels, mobile navigation state, and signup validation via the browser accessibility tree and page state.
-- [ ] Optional screenshot artifact: the preview webview is not composited in this environment, so screenshot capture is unavailable despite the live page and browser-DOM checks succeeding.
+- [ ] Optional screenshot artifact: screenshot capture was retried after preview reload but the webview still produced no composited frames; browser-DOM, accessibility-tree, asset, font, and responsive checks succeeded.
 
 ## Phase 5 — Private GitHub delivery
 
@@ -61,6 +62,8 @@
 - [x] Commit app source, extracted assets/manifest, and docs on the feature branch; exclude `.freebuff/`, original samples, dependencies, and build output.
 - [x] Push `main` and `feat/bytespace-frontend` to the private GitHub repository.
 - [x] Open PR `feat/bytespace-frontend` → `main`: [#1 — Build responsive ByteSpace learning frontend](https://github.com/MS-Jahan/ByteSpace_New_frontend_demo/pull/1).
+- [x] Add a GitHub Actions CI workflow to run `npm ci`, typecheck, lint, tests, and the production build on pushes and PRs.
+- [ ] Verify the new workflow finishes on PR #1; GitHub Actions may take a short time to start after the push.
 
 ## Acceptance criteria
 

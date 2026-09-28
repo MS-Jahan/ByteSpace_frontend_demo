@@ -49,7 +49,7 @@
 - [x] Run `npm run lint` — passed after aligning the flat ESLint config with the installed React Hooks plugin.
 - [x] Run `npm test` — passed (2 test files, 8 tests).
 - [x] Run `npm run build` — passed.
-- [x] Inspect the live browser preview at 1440px desktop and 390px mobile widths; the landing and auth routes render without horizontal overflow.
+- [x] Inspect the live browser preview at 1440px desktop and 390px mobile widths; landing and auth routes render without horizontal overflow.
 - [x] Confirm all 12 referenced page images and the Poppins, Satoshi, and Clash Display web fonts load; no runtime console errors observed.
 - [x] Inspect route headings, forms, accessible labels, mobile navigation state, and signup validation via the browser accessibility tree and page state.
 - [ ] Optional screenshot artifact: the preview webview is not composited in this environment, so screenshot capture is unavailable despite the live page and browser-DOM checks succeeding.
@@ -58,9 +58,9 @@
 
 - [x] Verify private repository `MS-Jahan/ByteSpace_New_frontend_demo` and authenticated CLI access.
 - [x] Create the `main` bootstrap commit with the root README/setup and create `feat/bytespace-frontend` from that shared base.
-- [ ] Create the feature-branch commit with app source, extracted assets/manifest, and docs; exclude `.freebuff/`, original samples, dependencies, and build output.
-- [ ] Push both `main` and `feat/bytespace-frontend` to the configured private repository.
-- [ ] Open PR `feat/bytespace-frontend` → `main` and include verification results.
+- [x] Commit app source, extracted assets/manifest, and docs on the feature branch; exclude `.freebuff/`, original samples, dependencies, and build output.
+- [x] Push `main` and `feat/bytespace-frontend` to the private GitHub repository.
+- [x] Open PR `feat/bytespace-frontend` → `main`: [#1 — Build responsive ByteSpace learning frontend](https://github.com/MS-Jahan/ByteSpace_New_frontend_demo/pull/1).
 
 ## Acceptance criteria
 
@@ -70,4 +70,4 @@
 - Source/assets stay outside `docs/`, and original samples remain ignored and unpublished.
 - Prompt, plan, setup, asset, and decision documentation are present under `docs/`.
 - Typecheck, lint, automated tests, and production build pass.
-- GitHub delivery is complete only after the feature branch has been pushed and the PR exists.
+- GitHub delivery is complete: the feature branch is pushed and an open PR targets `main`.

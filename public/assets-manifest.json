@@ -1,0 +1,4422 @@
+{
+  "generatedAt": "2026-09-28T16:07:38.002Z",
+  "samples": {
+    "course-details.html": [
+      {
+        "file": "course-details-rectangle-3f76ebf680.png",
+        "layer": "Rectangle",
+        "offset": 7529
+      },
+      {
+        "file": "course-details-rectangle-e363ccde9e.png",
+        "layer": "Rectangle",
+        "offset": 55179
+      },
+      {
+        "file": "course-details-rectangle-7e85079f92.png",
+        "layer": "Rectangle",
+        "offset": 106045
+      },
+      {
+        "file": "course-details-rectangle-8d7c8d1b26.png",
+        "layer": "Rectangle",
+        "offset": 160051
+      },
+      {
+        "file": "course-details-frame-c9df1e432b.png",
+        "layer": "Frame",
+        "offset": 229489
+      },
+      {
+        "file": "course-details-course-details-4a7d0e390b.jpg",
+        "layer": null,
+        "offset": 530399
+      }
+    ],
+    "course-lessons.html": [
+      {
+        "file": "course-details-frame-c9df1e432b.png",
+        "layer": "Frame",
+        "offset": 43672
+      },
+      {
+        "file": "course-details-course-details-4a7d0e390b.jpg",
+        "layer": null,
+        "offset": 344582
+      }
+    ],
+    "course-reviews.html": [
+      {
+        "file": "course-reviews-course-reviews-13645e2369.png",
+        "layer": null,
+        "offset": 28578
+      },
+      {
+        "file": "course-reviews-course-reviews-0c82569c42.png",
+        "layer": null,
+        "offset": 149029
+      },
+      {
+        "file": "course-reviews-course-reviews-1386882254.png",
+        "layer": null,
+        "offset": 247816
+      },
+      {
+        "file": "course-reviews-course-reviews-4dbffda228.png",
+        "layer": null,
+        "offset": 362920
+      },
+      {
+        "file": "course-details-frame-c9df1e432b.png",
+        "layer": "Frame",
+        "offset": 496045
+      },
+      {
+        "file": "course-details-course-details-4a7d0e390b.jpg",
+        "layer": null,
+        "offset": 796955
+      }
+    ],
+    "creator-profile.html": [
+      {
+        "file": "creator-profile-frame-d29f148198.png",
+        "layer": "Frame",
+        "offset": 6221
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 186571
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 262630
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 363425
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 480553
+      },
+      {
+        "file": "creator-profile-frame-292eb19833.png",
+        "layer": "Frame",
+        "offset": 584213
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 684591
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 760650
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 861445
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 978573
+      },
+      {
+        "file": "creator-profile-frame-91d6a0d182.png",
+        "layer": "Frame",
+        "offset": 1082233
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1217741
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 1293800
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 1394595
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 1511723
+      },
+      {
+        "file": "creator-profile-frame-367cd578d9.png",
+        "layer": "Frame",
+        "offset": 1615383
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1756068
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 1832127
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 1932922
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 2050050
+      },
+      {
+        "file": "creator-profile-frame-02353a4b7d.png",
+        "layer": "Frame",
+        "offset": 2153713
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2230154
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 2306213
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 2407008
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 2524136
+      },
+      {
+        "file": "creator-profile-frame-90b85b649a.png",
+        "layer": "Frame",
+        "offset": 2627799
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2769940
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 2845999
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 2946794
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 3063922
+      },
+      {
+        "file": "creator-profile-image-8769fdad0a.png",
+        "layer": "Image",
+        "offset": 3172956
+      }
+    ],
+    "home.html": [
+      {
+        "file": "home-image-15c3a6ff74.png",
+        "layer": "Image",
+        "offset": 12464
+      },
+      {
+        "file": "course-reviews-course-reviews-4dbffda228.png",
+        "layer": null,
+        "offset": 469553
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 575454
+      },
+      {
+        "file": "home-home-40d4ad3caf.png",
+        "layer": null,
+        "offset": 651431
+      },
+      {
+        "file": "home-home-e6c9467db0.png",
+        "layer": null,
+        "offset": 783564
+      },
+      {
+        "file": "home-home-2f0049b55f.png",
+        "layer": null,
+        "offset": 879049
+      },
+      {
+        "file": "home-home-3ff1efea98.png",
+        "layer": null,
+        "offset": 1004394
+      },
+      {
+        "file": "home-home-f6e12716fa.png",
+        "layer": null,
+        "offset": 1099027
+      },
+      {
+        "file": "home-image-9c1dea097c.png",
+        "layer": "Image",
+        "offset": 1206303
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 1243748
+      },
+      {
+        "file": "home-image-8696b5a3c4.png",
+        "layer": "Image",
+        "offset": 1244438
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 1291487
+      },
+      {
+        "file": "home-image-4f7948f454.png",
+        "layer": "Image",
+        "offset": 1292233
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 1308289
+      },
+      {
+        "file": "home-cone-01-2-924b0a63b2.png",
+        "layer": "Cone_01 2",
+        "offset": 1308985
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 1350674
+      },
+      {
+        "file": "home-cone-01-2-8203698f80.png",
+        "layer": "Cone_01 2",
+        "offset": 1351384
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 1391045
+      },
+      {
+        "file": "home-cone-01-2-3741d7ed35.png",
+        "layer": "Cone_01 2",
+        "offset": 1391755
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 1404172
+      },
+      {
+        "file": "creator-profile-frame-d29f148198.png",
+        "layer": "Frame",
+        "offset": 1456474
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1636785
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 1712800
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 1813551
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 1930635
+      },
+      {
+        "file": "creator-profile-frame-292eb19833.png",
+        "layer": "Frame",
+        "offset": 2034285
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2134624
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 2210639
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 2311390
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 2428474
+      },
+      {
+        "file": "creator-profile-frame-91d6a0d182.png",
+        "layer": "Frame",
+        "offset": 2532114
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2667581
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 2743596
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 2844347
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 2961431
+      },
+      {
+        "file": "creator-profile-frame-367cd578d9.png",
+        "layer": "Frame",
+        "offset": 3065071
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 3205713
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 3281728
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 3382479
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 3499563
+      },
+      {
+        "file": "creator-profile-frame-02353a4b7d.png",
+        "layer": "Frame",
+        "offset": 3603216
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 3679614
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 3755629
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 3856380
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 3973464
+      },
+      {
+        "file": "creator-profile-frame-90b85b649a.png",
+        "layer": "Frame",
+        "offset": 4077107
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 4219205
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 4295220
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 4395971
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 4513055
+      },
+      {
+        "file": "home-frame-65ed80a823.png",
+        "layer": "Frame",
+        "offset": 4645472
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 4824361
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 4900446
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 5001267
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 5118421
+      },
+      {
+        "file": "home-image-eb157cb563.png",
+        "layer": "Image",
+        "offset": 5222354
+      },
+      {
+        "file": "home-image-69d19a8e47.png",
+        "layer": "Image",
+        "offset": 5800789
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 5820447
+      },
+      {
+        "file": "home-image-7be5f04241.png",
+        "layer": "Image",
+        "offset": 5826290
+      },
+      {
+        "file": "course-reviews-course-reviews-4dbffda228.png",
+        "layer": null,
+        "offset": 6411947
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 6517918
+      },
+      {
+        "file": "home-home-40d4ad3caf.png",
+        "layer": null,
+        "offset": 6593965
+      },
+      {
+        "file": "home-home-e6c9467db0.png",
+        "layer": null,
+        "offset": 6726168
+      },
+      {
+        "file": "home-home-2f0049b55f.png",
+        "layer": null,
+        "offset": 6821723
+      },
+      {
+        "file": "home-home-3ff1efea98.png",
+        "layer": null,
+        "offset": 6947138
+      },
+      {
+        "file": "home-home-f6e12716fa.png",
+        "layer": null,
+        "offset": 7041841
+      },
+      {
+        "file": "home-image-868b505a3a.png",
+        "layer": "Image",
+        "offset": 7149185
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 7171107
+      },
+      {
+        "file": "home-cone-01-2-99d4f12ec9.png",
+        "layer": "Cone_01 2",
+        "offset": 7184064
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 7196357
+      },
+      {
+        "file": "home-image-7b7c8a5d35.png",
+        "layer": "Image",
+        "offset": 7197059
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 7221848
+      },
+      {
+        "file": "home-image-d9a07c294e.png",
+        "layer": "Image",
+        "offset": 7222539
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 7249456
+      },
+      {
+        "file": "home-image-4f7948f454.png",
+        "layer": "Image",
+        "offset": 7250202
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 7266258
+      },
+      {
+        "file": "home-cone-01-2-4507d0290b.png",
+        "layer": "Cone_01 2",
+        "offset": 7266955
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 7280580
+      },
+      {
+        "file": "home-cone-01-2-ed0ce392c8.png",
+        "layer": "Cone_01 2",
+        "offset": 7281288
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 7306065
+      },
+      {
+        "file": "home-cone-01-2-f720bcbad8.png",
+        "layer": "Cone_01 2",
+        "offset": 7306773
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 7348002
+      },
+      {
+        "file": "home-ellipse-f4921d3e28.png",
+        "layer": "Ellipse",
+        "offset": 7352094
+      },
+      {
+        "file": "home-ellipse-08e3eab14a.png",
+        "layer": "Ellipse",
+        "offset": 7371525
+      },
+      {
+        "file": "home-ellipse-eae493dc0f.png",
+        "layer": "Ellipse",
+        "offset": 7390734
+      }
+    ],
+    "imgs/Course Details.svg": [
+      {
+        "file": "course-details-course-details-1dd4796eb5.jpg",
+        "layer": null,
+        "offset": 888877
+      },
+      {
+        "file": "course-details-course-details-af5773462d.jpg",
+        "layer": null,
+        "offset": 931699
+      },
+      {
+        "file": "course-details-course-details-92a3408308.jpg",
+        "layer": null,
+        "offset": 989449
+      },
+      {
+        "file": "course-details-course-details-afbadecd95.jpg",
+        "layer": null,
+        "offset": 1062151
+      },
+      {
+        "file": "course-details-course-details-6bdec61b47.jpg",
+        "layer": null,
+        "offset": 1116386
+      },
+      {
+        "file": "course-details-course-details-4a7d0e390b.jpg",
+        "layer": null,
+        "offset": 1319968
+      }
+    ],
+    "imgs/Course Lessons.svg": [
+      {
+        "file": "course-details-course-details-6bdec61b47.jpg",
+        "layer": null,
+        "offset": 985132
+      },
+      {
+        "file": "course-details-course-details-4a7d0e390b.jpg",
+        "layer": null,
+        "offset": 1188713
+      }
+    ],
+    "imgs/Course Reviews.svg": [
+      {
+        "file": "course-reviews-course-reviews-13645e2369.png",
+        "layer": null,
+        "offset": 812180
+      },
+      {
+        "file": "course-reviews-course-reviews-0c82569c42.png",
+        "layer": null,
+        "offset": 926932
+      },
+      {
+        "file": "course-reviews-course-reviews-1386882254.png",
+        "layer": null,
+        "offset": 1019952
+      },
+      {
+        "file": "course-reviews-course-reviews-4dbffda228.png",
+        "layer": null,
+        "offset": 1129248
+      },
+      {
+        "file": "course-details-course-details-6bdec61b47.jpg",
+        "layer": null,
+        "offset": 1234581
+      },
+      {
+        "file": "course-details-course-details-4a7d0e390b.jpg",
+        "layer": null,
+        "offset": 1438162
+      }
+    ],
+    "imgs/Creator Profile.svg": [
+      {
+        "file": "creator-profile-creator-profile-56e727c127.jpg",
+        "layer": null,
+        "offset": 575343
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 710033
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 785442
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 885587
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 1002060
+      },
+      {
+        "file": "creator-profile-creator-profile-8eaa5e0652.jpg",
+        "layer": null,
+        "offset": 1102585
+      },
+      {
+        "file": "creator-profile-creator-profile-8096f37ca2.jpg",
+        "layer": null,
+        "offset": 1176771
+      },
+      {
+        "file": "creator-profile-creator-profile-9a66fe68c4.jpg",
+        "layer": null,
+        "offset": 1275165
+      },
+      {
+        "file": "creator-profile-creator-profile-764ea2b557.jpg",
+        "layer": null,
+        "offset": 1376143
+      },
+      {
+        "file": "creator-profile-creator-profile-df575fc9d2.jpg",
+        "layer": null,
+        "offset": 1419761
+      }
+    ],
+    "imgs/Home.svg": [
+      {
+        "file": "home-home-851e77d06c.png",
+        "layer": null,
+        "offset": 1634246
+      },
+      {
+        "file": "course-reviews-course-reviews-4dbffda228.png",
+        "layer": null,
+        "offset": 1942212
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2047546
+      },
+      {
+        "file": "home-home-40d4ad3caf.png",
+        "layer": null,
+        "offset": 2122956
+      },
+      {
+        "file": "home-home-e6c9467db0.png",
+        "layer": null,
+        "offset": 2254522
+      },
+      {
+        "file": "home-home-2f0049b55f.png",
+        "layer": null,
+        "offset": 2349440
+      },
+      {
+        "file": "home-home-3ff1efea98.png",
+        "layer": null,
+        "offset": 2474218
+      },
+      {
+        "file": "home-home-f6e12716fa.png",
+        "layer": null,
+        "offset": 2568284
+      },
+      {
+        "file": "home-home-021f81bfc4.png",
+        "layer": null,
+        "offset": 2674868
+      },
+      {
+        "file": "home-home-92f21ffd63.png",
+        "layer": null,
+        "offset": 4270080
+      },
+      {
+        "file": "home-home-2b33854c48.png",
+        "layer": null,
+        "offset": 6041197
+      },
+      {
+        "file": "home-home-a96322e3c1.png",
+        "layer": null,
+        "offset": 7829462
+      },
+      {
+        "file": "home-home-8d7caeb375.png",
+        "layer": null,
+        "offset": 10403527
+      },
+      {
+        "file": "creator-profile-creator-profile-56e727c127.jpg",
+        "layer": null,
+        "offset": 11744526
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 11879218
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 11979365
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 12095840
+      },
+      {
+        "file": "creator-profile-creator-profile-8eaa5e0652.jpg",
+        "layer": null,
+        "offset": 12196367
+      },
+      {
+        "file": "creator-profile-creator-profile-8096f37ca2.jpg",
+        "layer": null,
+        "offset": 12270555
+      },
+      {
+        "file": "creator-profile-creator-profile-9a66fe68c4.jpg",
+        "layer": null,
+        "offset": 12368951
+      },
+      {
+        "file": "creator-profile-creator-profile-764ea2b557.jpg",
+        "layer": null,
+        "offset": 12469931
+      },
+      {
+        "file": "creator-profile-creator-profile-df575fc9d2.jpg",
+        "layer": null,
+        "offset": 12513551
+      },
+      {
+        "file": "home-home-90a0cf2a45.png",
+        "layer": null,
+        "offset": 12591523
+      },
+      {
+        "file": "home-home-f5b5a7e7fe.png",
+        "layer": null,
+        "offset": 12871076
+      },
+      {
+        "file": "course-reviews-course-reviews-1386882254.png",
+        "layer": null,
+        "offset": 14720451
+      },
+      {
+        "file": "home-home-abfb8c9cef.png",
+        "layer": null,
+        "offset": 14829750
+      }
+    ],
+    "imgs/Login.svg": [
+      {
+        "file": "creator-profile-creator-profile-8eaa5e0652.jpg",
+        "layer": null,
+        "offset": 185712
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 259897
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 335305
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 435449
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 551921
+      },
+      {
+        "file": "creator-profile-creator-profile-8096f37ca2.jpg",
+        "layer": null,
+        "offset": 652445
+      },
+      {
+        "file": "course-reviews-course-reviews-4dbffda228.png",
+        "layer": null,
+        "offset": 750838
+      },
+      {
+        "file": "home-home-40d4ad3caf.png",
+        "layer": null,
+        "offset": 856170
+      },
+      {
+        "file": "home-home-e6c9467db0.png",
+        "layer": null,
+        "offset": 987734
+      },
+      {
+        "file": "home-home-2f0049b55f.png",
+        "layer": null,
+        "offset": 1082650
+      },
+      {
+        "file": "home-home-3ff1efea98.png",
+        "layer": null,
+        "offset": 1207427
+      },
+      {
+        "file": "home-home-f6e12716fa.png",
+        "layer": null,
+        "offset": 1301492
+      },
+      {
+        "file": "home-home-92f21ffd63.png",
+        "layer": null,
+        "offset": 1408075
+      },
+      {
+        "file": "home-home-2b33854c48.png",
+        "layer": null,
+        "offset": 3179190
+      },
+      {
+        "file": "home-home-8d7caeb375.png",
+        "layer": null,
+        "offset": 4967453
+      }
+    ],
+    "imgs/Register.svg": [
+      {
+        "file": "creator-profile-creator-profile-8eaa5e0652.jpg",
+        "layer": null,
+        "offset": 207763
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 281948
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 357356
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 457500
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 573972
+      },
+      {
+        "file": "creator-profile-creator-profile-8096f37ca2.jpg",
+        "layer": null,
+        "offset": 674496
+      },
+      {
+        "file": "course-reviews-course-reviews-4dbffda228.png",
+        "layer": null,
+        "offset": 772889
+      },
+      {
+        "file": "home-home-40d4ad3caf.png",
+        "layer": null,
+        "offset": 878221
+      },
+      {
+        "file": "home-home-e6c9467db0.png",
+        "layer": null,
+        "offset": 1009785
+      },
+      {
+        "file": "home-home-2f0049b55f.png",
+        "layer": null,
+        "offset": 1104701
+      },
+      {
+        "file": "home-home-3ff1efea98.png",
+        "layer": null,
+        "offset": 1229478
+      },
+      {
+        "file": "home-home-f6e12716fa.png",
+        "layer": null,
+        "offset": 1323543
+      },
+      {
+        "file": "home-home-92f21ffd63.png",
+        "layer": null,
+        "offset": 1430126
+      },
+      {
+        "file": "home-home-2b33854c48.png",
+        "layer": null,
+        "offset": 3201241
+      },
+      {
+        "file": "home-home-8d7caeb375.png",
+        "layer": null,
+        "offset": 4989504
+      }
+    ],
+    "imgs/Search Page.svg": [
+      {
+        "file": "creator-profile-creator-profile-56e727c127.jpg",
+        "layer": null,
+        "offset": 1025190
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1159879
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 1235287
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 1335431
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 1451903
+      },
+      {
+        "file": "creator-profile-creator-profile-8eaa5e0652.jpg",
+        "layer": null,
+        "offset": 1552427
+      },
+      {
+        "file": "creator-profile-creator-profile-8096f37ca2.jpg",
+        "layer": null,
+        "offset": 1626612
+      },
+      {
+        "file": "creator-profile-creator-profile-9a66fe68c4.jpg",
+        "layer": null,
+        "offset": 1725005
+      },
+      {
+        "file": "creator-profile-creator-profile-764ea2b557.jpg",
+        "layer": null,
+        "offset": 1825982
+      },
+      {
+        "file": "creator-profile-creator-profile-df575fc9d2.jpg",
+        "layer": null,
+        "offset": 1869599
+      }
+    ],
+    "login.html": [
+      {
+        "file": "creator-profile-frame-d29f148198.png",
+        "layer": "Frame",
+        "offset": 22046
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 202256
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 278271
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 379022
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 496106
+      },
+      {
+        "file": "creator-profile-frame-292eb19833.png",
+        "layer": "Frame",
+        "offset": 599675
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 699913
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 775928
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 876679
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 993763
+      },
+      {
+        "file": "creator-profile-frame-91d6a0d182.png",
+        "layer": "Frame",
+        "offset": 1097332
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1232700
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 1308715
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 1409466
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 1526550
+      },
+      {
+        "file": "creator-profile-frame-367cd578d9.png",
+        "layer": "Frame",
+        "offset": 1630119
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1770664
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 1846679
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 1947430
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 2064514
+      },
+      {
+        "file": "creator-profile-frame-02353a4b7d.png",
+        "layer": "Frame",
+        "offset": 2168086
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2244387
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 2320402
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 2421153
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 2538237
+      },
+      {
+        "file": "creator-profile-frame-90b85b649a.png",
+        "layer": "Frame",
+        "offset": 2641809
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2783810
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 2859825
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 2960576
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 3077660
+      },
+      {
+        "file": "creator-profile-frame-d29f148198.png",
+        "layer": "Frame",
+        "offset": 3181428
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 3361708
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 3437745
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 3538518
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 3655624
+      },
+      {
+        "file": "creator-profile-frame-292eb19833.png",
+        "layer": "Frame",
+        "offset": 3759251
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 3859559
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 3935596
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 4036369
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 4153475
+      },
+      {
+        "file": "creator-profile-frame-91d6a0d182.png",
+        "layer": "Frame",
+        "offset": 4257102
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 4392540
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 4468577
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 4569350
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 4686456
+      },
+      {
+        "file": "creator-profile-frame-367cd578d9.png",
+        "layer": "Frame",
+        "offset": 4790083
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 4930698
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 5006735
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 5107508
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 5224614
+      },
+      {
+        "file": "creator-profile-frame-02353a4b7d.png",
+        "layer": "Frame",
+        "offset": 5328244
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 5404615
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 5480652
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 5581425
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 5698531
+      },
+      {
+        "file": "creator-profile-frame-90b85b649a.png",
+        "layer": "Frame",
+        "offset": 5802161
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 5944232
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 6020269
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 6121042
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 6238148
+      },
+      {
+        "file": "creator-profile-frame-d29f148198.png",
+        "layer": "Frame",
+        "offset": 6341981
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 6522259
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 6598296
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 6699069
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 6816175
+      },
+      {
+        "file": "creator-profile-frame-292eb19833.png",
+        "layer": "Frame",
+        "offset": 6919802
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 7020108
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 7096145
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 7196918
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 7314024
+      },
+      {
+        "file": "creator-profile-frame-91d6a0d182.png",
+        "layer": "Frame",
+        "offset": 7417651
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 7553087
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 7629124
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 7729897
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 7847003
+      },
+      {
+        "file": "creator-profile-frame-367cd578d9.png",
+        "layer": "Frame",
+        "offset": 7950630
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 8091243
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 8167280
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 8268053
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 8385159
+      },
+      {
+        "file": "creator-profile-frame-02353a4b7d.png",
+        "layer": "Frame",
+        "offset": 8488789
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 8565158
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 8641195
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 8741968
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 8859074
+      },
+      {
+        "file": "creator-profile-frame-90b85b649a.png",
+        "layer": "Frame",
+        "offset": 8962704
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 9104773
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 9180810
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 9281583
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 9398689
+      }
+    ],
+    "register.html": [
+      {
+        "file": "register-frame-bd8600e5b3.png",
+        "layer": "Frame",
+        "offset": 12695
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 112541
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 188526
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 289247
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 406301
+      },
+      {
+        "file": "register-frame-0e9c78ece1.png",
+        "layer": "Frame",
+        "offset": 509670
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 643326
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 719311
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 820032
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 937086
+      },
+      {
+        "file": "course-reviews-course-reviews-4dbffda228.png",
+        "layer": null,
+        "offset": 1042928
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1148803
+      },
+      {
+        "file": "home-home-40d4ad3caf.png",
+        "layer": null,
+        "offset": 1224754
+      },
+      {
+        "file": "home-home-e6c9467db0.png",
+        "layer": null,
+        "offset": 1356861
+      },
+      {
+        "file": "home-home-2f0049b55f.png",
+        "layer": null,
+        "offset": 1452320
+      },
+      {
+        "file": "home-home-3ff1efea98.png",
+        "layer": null,
+        "offset": 1577639
+      },
+      {
+        "file": "home-home-f6e12716fa.png",
+        "layer": null,
+        "offset": 1672246
+      },
+      {
+        "file": "register-image-7d4e3cabf3.png",
+        "layer": "Image",
+        "offset": 1779540
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Mask",
+        "offset": 1795586
+      },
+      {
+        "file": "register-cone-01-2-f78b01a8d3.png",
+        "layer": "Cone_01 2",
+        "offset": 1796277
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 1807564
+      },
+      {
+        "file": "home-cone-01-2-3741d7ed35.png",
+        "layer": "Cone_01 2",
+        "offset": 1808266
+      },
+      {
+        "file": "home-mask-375dacadb8.png",
+        "layer": "Cone_01 1",
+        "offset": 1820681
+      }
+    ],
+    "search-page.html": [
+      {
+        "file": "creator-profile-frame-d29f148198.png",
+        "layer": "Frame",
+        "offset": 22046
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 202256
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 278271
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 379022
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 496106
+      },
+      {
+        "file": "creator-profile-frame-292eb19833.png",
+        "layer": "Frame",
+        "offset": 599675
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 699913
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 775928
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 876679
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 993763
+      },
+      {
+        "file": "creator-profile-frame-91d6a0d182.png",
+        "layer": "Frame",
+        "offset": 1097332
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1232700
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 1308715
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 1409466
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 1526550
+      },
+      {
+        "file": "creator-profile-frame-367cd578d9.png",
+        "layer": "Frame",
+        "offset": 1630119
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 1770664
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 1846679
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 1947430
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 2064514
+      },
+      {
+        "file": "creator-profile-frame-02353a4b7d.png",
+        "layer": "Frame",
+        "offset": 2168086
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2244387
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 2320402
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 2421153
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 2538237
+      },
+      {
+        "file": "creator-profile-frame-90b85b649a.png",
+        "layer": "Frame",
+        "offset": 2641809
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 2783810
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 2859825
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 2960576
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 3077660
+      },
+      {
+        "file": "creator-profile-frame-d29f148198.png",
+        "layer": "Frame",
+        "offset": 3181428
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 3361708
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 3437745
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 3538518
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 3655624
+      },
+      {
+        "file": "creator-profile-frame-292eb19833.png",
+        "layer": "Frame",
+        "offset": 3759251
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 3859559
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 3935596
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 4036369
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 4153475
+      },
+      {
+        "file": "creator-profile-frame-91d6a0d182.png",
+        "layer": "Frame",
+        "offset": 4257102
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 4392540
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 4468577
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 4569350
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 4686456
+      },
+      {
+        "file": "creator-profile-frame-367cd578d9.png",
+        "layer": "Frame",
+        "offset": 4790083
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 4930698
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 5006735
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 5107508
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 5224614
+      },
+      {
+        "file": "creator-profile-frame-02353a4b7d.png",
+        "layer": "Frame",
+        "offset": 5328244
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 5404615
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 5480652
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 5581425
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 5698531
+      },
+      {
+        "file": "creator-profile-frame-90b85b649a.png",
+        "layer": "Frame",
+        "offset": 5802161
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 5944232
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 6020269
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 6121042
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 6238148
+      },
+      {
+        "file": "creator-profile-frame-d29f148198.png",
+        "layer": "Frame",
+        "offset": 6341981
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 6522259
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 6598296
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 6699069
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 6816175
+      },
+      {
+        "file": "creator-profile-frame-292eb19833.png",
+        "layer": "Frame",
+        "offset": 6919802
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 7020108
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 7096145
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 7196918
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 7314024
+      },
+      {
+        "file": "creator-profile-frame-91d6a0d182.png",
+        "layer": "Frame",
+        "offset": 7417651
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 7553087
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 7629124
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 7729897
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 7847003
+      },
+      {
+        "file": "creator-profile-frame-367cd578d9.png",
+        "layer": "Frame",
+        "offset": 7950630
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 8091243
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 8167280
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 8268053
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 8385159
+      },
+      {
+        "file": "creator-profile-frame-02353a4b7d.png",
+        "layer": "Frame",
+        "offset": 8488789
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 8565158
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 8641195
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 8741968
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 8859074
+      },
+      {
+        "file": "creator-profile-frame-90b85b649a.png",
+        "layer": "Frame",
+        "offset": 8962704
+      },
+      {
+        "file": "creator-profile-creator-profile-c18c1eacda.png",
+        "layer": null,
+        "offset": 9104773
+      },
+      {
+        "file": "creator-profile-creator-profile-3ad412fe0f.png",
+        "layer": null,
+        "offset": 9180810
+      },
+      {
+        "file": "creator-profile-creator-profile-8e0412163a.png",
+        "layer": null,
+        "offset": 9281583
+      },
+      {
+        "file": "creator-profile-creator-profile-3859945b0b.png",
+        "layer": null,
+        "offset": 9398689
+      }
+    ]
+  },
+  "assets": {
+    "course-details-rectangle-3f76ebf680.png": {
+      "file": "course-details-rectangle-3f76ebf680.png",
+      "mime": "image/png",
+      "sha256": "3f76ebf68017cc265997420186451fd27b60b7aa30398a6c02fe7e66a08f9e02",
+      "bytes": 35611,
+      "sources": [
+        {
+          "file": "course-details.html",
+          "offset": 7529
+        }
+      ]
+    },
+    "course-details-rectangle-e363ccde9e.png": {
+      "file": "course-details-rectangle-e363ccde9e.png",
+      "mime": "image/png",
+      "sha256": "e363ccde9e349b0ab055c3be82aabeeb1f4c212baccdab3d5edb83b626d56d58",
+      "bytes": 38025,
+      "sources": [
+        {
+          "file": "course-details.html",
+          "offset": 55179
+        }
+      ]
+    },
+    "course-details-rectangle-7e85079f92.png": {
+      "file": "course-details-rectangle-7e85079f92.png",
+      "mime": "image/png",
+      "sha256": "7e85079f92dbef16d96732a6e5b971916b6f0ebe50ee52853e0a5d4306112f67",
+      "bytes": 40378,
+      "sources": [
+        {
+          "file": "course-details.html",
+          "offset": 106045
+        }
+      ]
+    },
+    "course-details-rectangle-8d7c8d1b26.png": {
+      "file": "course-details-rectangle-8d7c8d1b26.png",
+      "mime": "image/png",
+      "sha256": "8d7c8d1b267a229ec79d32a47cc9247773429af03a758133e5878290082b0d9f",
+      "bytes": 36338,
+      "sources": [
+        {
+          "file": "course-details.html",
+          "offset": 160051
+        }
+      ]
+    },
+    "course-details-frame-c9df1e432b.png": {
+      "file": "course-details-frame-c9df1e432b.png",
+      "mime": "image/png",
+      "sha256": "c9df1e432b8f2538babee323a8d6a1e53576f7956c09cb1291b7516e7f6d4851",
+      "bytes": 212619,
+      "sources": [
+        {
+          "file": "course-details.html",
+          "offset": 229489
+        },
+        {
+          "file": "course-lessons.html",
+          "offset": 43672
+        },
+        {
+          "file": "course-reviews.html",
+          "offset": 496045
+        }
+      ]
+    },
+    "course-details-course-details-4a7d0e390b.jpg": {
+      "file": "course-details-course-details-4a7d0e390b.jpg",
+      "mime": "image/jpeg",
+      "sha256": "4a7d0e390b937ed7dba0dc9dacbd07310e8231455ffe0cd77fe8bdc1cf563217",
+      "bytes": 45511,
+      "sources": [
+        {
+          "file": "course-details.html",
+          "offset": 530399
+        },
+        {
+          "file": "course-lessons.html",
+          "offset": 344582
+        },
+        {
+          "file": "course-reviews.html",
+          "offset": 796955
+        },
+        {
+          "file": "imgs/Course Details.svg",
+          "offset": 1319968
+        },
+        {
+          "file": "imgs/Course Lessons.svg",
+          "offset": 1188713
+        },
+        {
+          "file": "imgs/Course Reviews.svg",
+          "offset": 1438162
+        }
+      ]
+    },
+    "course-reviews-course-reviews-13645e2369.png": {
+      "file": "course-reviews-course-reviews-13645e2369.png",
+      "mime": "image/png",
+      "sha256": "13645e236946bf8d18892dbe3353c907f5f4d059a6ca4a571f7d6997bbf901bb",
+      "bytes": 85975,
+      "sources": [
+        {
+          "file": "course-reviews.html",
+          "offset": 28578
+        },
+        {
+          "file": "imgs/Course Reviews.svg",
+          "offset": 812180
+        }
+      ]
+    },
+    "course-reviews-course-reviews-0c82569c42.png": {
+      "file": "course-reviews-course-reviews-0c82569c42.png",
+      "mime": "image/png",
+      "sha256": "0c82569c42ca77d8a24e406a4ee6ff2c7983184de18558efbf8d8a4e2cace4cb",
+      "bytes": 69677,
+      "sources": [
+        {
+          "file": "course-reviews.html",
+          "offset": 149029
+        },
+        {
+          "file": "imgs/Course Reviews.svg",
+          "offset": 926932
+        }
+      ]
+    },
+    "course-reviews-course-reviews-1386882254.png": {
+      "file": "course-reviews-course-reviews-1386882254.png",
+      "mime": "image/png",
+      "sha256": "13868822546537a3f4ffadc3547b68047de9ae92c2e72841f3b781edddbe9c5c",
+      "bytes": 81884,
+      "sources": [
+        {
+          "file": "course-reviews.html",
+          "offset": 247816
+        },
+        {
+          "file": "imgs/Course Reviews.svg",
+          "offset": 1019952
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 14720451
+        }
+      ]
+    },
+    "course-reviews-course-reviews-4dbffda228.png": {
+      "file": "course-reviews-course-reviews-4dbffda228.png",
+      "mime": "image/png",
+      "sha256": "4dbffda228ea156569688852f127ec5afddc84b5e20f474fccb825beeeb4749b",
+      "bytes": 78910,
+      "sources": [
+        {
+          "file": "course-reviews.html",
+          "offset": 362920
+        },
+        {
+          "file": "home.html",
+          "offset": 469553
+        },
+        {
+          "file": "home.html",
+          "offset": 6411947
+        },
+        {
+          "file": "imgs/Course Reviews.svg",
+          "offset": 1129248
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 1942212
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 750838
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 772889
+        },
+        {
+          "file": "register.html",
+          "offset": 1042928
+        }
+      ]
+    },
+    "creator-profile-frame-d29f148198.png": {
+      "file": "creator-profile-frame-d29f148198.png",
+      "mime": "image/png",
+      "sha256": "d29f1481985400a5dec35cc27b9fb32264901479779e48a237e012e18fc82a22",
+      "bytes": 131122,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 6221
+        },
+        {
+          "file": "home.html",
+          "offset": 1456474
+        },
+        {
+          "file": "login.html",
+          "offset": 22046
+        },
+        {
+          "file": "login.html",
+          "offset": 3181428
+        },
+        {
+          "file": "login.html",
+          "offset": 6341981
+        },
+        {
+          "file": "search-page.html",
+          "offset": 22046
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3181428
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6341981
+        }
+      ]
+    },
+    "creator-profile-creator-profile-c18c1eacda.png": {
+      "file": "creator-profile-creator-profile-c18c1eacda.png",
+      "mime": "image/png",
+      "sha256": "c18c1eacda34f62a6d3f9ca82179db6148c97e939741c7e6ebb593e95ee0fc15",
+      "bytes": 56467,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 186571
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 684591
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 1217741
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 1756068
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 2230154
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 2769940
+        },
+        {
+          "file": "home.html",
+          "offset": 575454
+        },
+        {
+          "file": "home.html",
+          "offset": 1636785
+        },
+        {
+          "file": "home.html",
+          "offset": 2134624
+        },
+        {
+          "file": "home.html",
+          "offset": 2667581
+        },
+        {
+          "file": "home.html",
+          "offset": 3205713
+        },
+        {
+          "file": "home.html",
+          "offset": 3679614
+        },
+        {
+          "file": "home.html",
+          "offset": 4219205
+        },
+        {
+          "file": "home.html",
+          "offset": 4824361
+        },
+        {
+          "file": "home.html",
+          "offset": 6517918
+        },
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 710033
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 2047546
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 259897
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 281948
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1159879
+        },
+        {
+          "file": "login.html",
+          "offset": 202256
+        },
+        {
+          "file": "login.html",
+          "offset": 699913
+        },
+        {
+          "file": "login.html",
+          "offset": 1232700
+        },
+        {
+          "file": "login.html",
+          "offset": 1770664
+        },
+        {
+          "file": "login.html",
+          "offset": 2244387
+        },
+        {
+          "file": "login.html",
+          "offset": 2783810
+        },
+        {
+          "file": "login.html",
+          "offset": 3361708
+        },
+        {
+          "file": "login.html",
+          "offset": 3859559
+        },
+        {
+          "file": "login.html",
+          "offset": 4392540
+        },
+        {
+          "file": "login.html",
+          "offset": 4930698
+        },
+        {
+          "file": "login.html",
+          "offset": 5404615
+        },
+        {
+          "file": "login.html",
+          "offset": 5944232
+        },
+        {
+          "file": "login.html",
+          "offset": 6522259
+        },
+        {
+          "file": "login.html",
+          "offset": 7020108
+        },
+        {
+          "file": "login.html",
+          "offset": 7553087
+        },
+        {
+          "file": "login.html",
+          "offset": 8091243
+        },
+        {
+          "file": "login.html",
+          "offset": 8565158
+        },
+        {
+          "file": "login.html",
+          "offset": 9104773
+        },
+        {
+          "file": "register.html",
+          "offset": 112541
+        },
+        {
+          "file": "register.html",
+          "offset": 643326
+        },
+        {
+          "file": "register.html",
+          "offset": 1148803
+        },
+        {
+          "file": "search-page.html",
+          "offset": 202256
+        },
+        {
+          "file": "search-page.html",
+          "offset": 699913
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1232700
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1770664
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2244387
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2783810
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3361708
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3859559
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4392540
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4930698
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5404615
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5944232
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6522259
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7020108
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7553087
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8091243
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8565158
+        },
+        {
+          "file": "search-page.html",
+          "offset": 9104773
+        }
+      ]
+    },
+    "creator-profile-creator-profile-3ad412fe0f.png": {
+      "file": "creator-profile-creator-profile-3ad412fe0f.png",
+      "mime": "image/png",
+      "sha256": "3ad412fe0fd90f070bef719af6dd2434e947e965487c820a9c57be8e756261e8",
+      "bytes": 75020,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 262630
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 760650
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 1293800
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 1832127
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 2306213
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 2845999
+        },
+        {
+          "file": "home.html",
+          "offset": 1712800
+        },
+        {
+          "file": "home.html",
+          "offset": 2210639
+        },
+        {
+          "file": "home.html",
+          "offset": 2743596
+        },
+        {
+          "file": "home.html",
+          "offset": 3281728
+        },
+        {
+          "file": "home.html",
+          "offset": 3755629
+        },
+        {
+          "file": "home.html",
+          "offset": 4295220
+        },
+        {
+          "file": "home.html",
+          "offset": 4900446
+        },
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 785442
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 11879218
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 335305
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 357356
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1235287
+        },
+        {
+          "file": "login.html",
+          "offset": 278271
+        },
+        {
+          "file": "login.html",
+          "offset": 775928
+        },
+        {
+          "file": "login.html",
+          "offset": 1308715
+        },
+        {
+          "file": "login.html",
+          "offset": 1846679
+        },
+        {
+          "file": "login.html",
+          "offset": 2320402
+        },
+        {
+          "file": "login.html",
+          "offset": 2859825
+        },
+        {
+          "file": "login.html",
+          "offset": 3437745
+        },
+        {
+          "file": "login.html",
+          "offset": 3935596
+        },
+        {
+          "file": "login.html",
+          "offset": 4468577
+        },
+        {
+          "file": "login.html",
+          "offset": 5006735
+        },
+        {
+          "file": "login.html",
+          "offset": 5480652
+        },
+        {
+          "file": "login.html",
+          "offset": 6020269
+        },
+        {
+          "file": "login.html",
+          "offset": 6598296
+        },
+        {
+          "file": "login.html",
+          "offset": 7096145
+        },
+        {
+          "file": "login.html",
+          "offset": 7629124
+        },
+        {
+          "file": "login.html",
+          "offset": 8167280
+        },
+        {
+          "file": "login.html",
+          "offset": 8641195
+        },
+        {
+          "file": "login.html",
+          "offset": 9180810
+        },
+        {
+          "file": "register.html",
+          "offset": 188526
+        },
+        {
+          "file": "register.html",
+          "offset": 719311
+        },
+        {
+          "file": "search-page.html",
+          "offset": 278271
+        },
+        {
+          "file": "search-page.html",
+          "offset": 775928
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1308715
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1846679
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2320402
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2859825
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3437745
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3935596
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4468577
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5006735
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5480652
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6020269
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6598296
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7096145
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7629124
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8167280
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8641195
+        },
+        {
+          "file": "search-page.html",
+          "offset": 9180810
+        }
+      ]
+    },
+    "creator-profile-creator-profile-8e0412163a.png": {
+      "file": "creator-profile-creator-profile-8e0412163a.png",
+      "mime": "image/png",
+      "sha256": "8e0412163a49fd32bac0fca79d3ebeb110e84dc1aedf47da74053bf55078dc15",
+      "bytes": 87266,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 363425
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 861445
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 1394595
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 1932922
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 2407008
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 2946794
+        },
+        {
+          "file": "home.html",
+          "offset": 1813551
+        },
+        {
+          "file": "home.html",
+          "offset": 2311390
+        },
+        {
+          "file": "home.html",
+          "offset": 2844347
+        },
+        {
+          "file": "home.html",
+          "offset": 3382479
+        },
+        {
+          "file": "home.html",
+          "offset": 3856380
+        },
+        {
+          "file": "home.html",
+          "offset": 4395971
+        },
+        {
+          "file": "home.html",
+          "offset": 5001267
+        },
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 885587
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 11979365
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 435449
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 457500
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1335431
+        },
+        {
+          "file": "login.html",
+          "offset": 379022
+        },
+        {
+          "file": "login.html",
+          "offset": 876679
+        },
+        {
+          "file": "login.html",
+          "offset": 1409466
+        },
+        {
+          "file": "login.html",
+          "offset": 1947430
+        },
+        {
+          "file": "login.html",
+          "offset": 2421153
+        },
+        {
+          "file": "login.html",
+          "offset": 2960576
+        },
+        {
+          "file": "login.html",
+          "offset": 3538518
+        },
+        {
+          "file": "login.html",
+          "offset": 4036369
+        },
+        {
+          "file": "login.html",
+          "offset": 4569350
+        },
+        {
+          "file": "login.html",
+          "offset": 5107508
+        },
+        {
+          "file": "login.html",
+          "offset": 5581425
+        },
+        {
+          "file": "login.html",
+          "offset": 6121042
+        },
+        {
+          "file": "login.html",
+          "offset": 6699069
+        },
+        {
+          "file": "login.html",
+          "offset": 7196918
+        },
+        {
+          "file": "login.html",
+          "offset": 7729897
+        },
+        {
+          "file": "login.html",
+          "offset": 8268053
+        },
+        {
+          "file": "login.html",
+          "offset": 8741968
+        },
+        {
+          "file": "login.html",
+          "offset": 9281583
+        },
+        {
+          "file": "register.html",
+          "offset": 289247
+        },
+        {
+          "file": "register.html",
+          "offset": 820032
+        },
+        {
+          "file": "search-page.html",
+          "offset": 379022
+        },
+        {
+          "file": "search-page.html",
+          "offset": 876679
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1409466
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1947430
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2421153
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2960576
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3538518
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4036369
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4569350
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5107508
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5581425
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6121042
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6699069
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7196918
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7729897
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8268053
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8741968
+        },
+        {
+          "file": "search-page.html",
+          "offset": 9281583
+        }
+      ]
+    },
+    "creator-profile-creator-profile-3859945b0b.png": {
+      "file": "creator-profile-creator-profile-3859945b0b.png",
+      "mime": "image/png",
+      "sha256": "3859945b0bc1dd9cecb13f0869f24f9692604ec4ddb2eef2e224072623a47309",
+      "bytes": 75304,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 480553
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 978573
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 1511723
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 2050050
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 2524136
+        },
+        {
+          "file": "creator-profile.html",
+          "offset": 3063922
+        },
+        {
+          "file": "home.html",
+          "offset": 1930635
+        },
+        {
+          "file": "home.html",
+          "offset": 2428474
+        },
+        {
+          "file": "home.html",
+          "offset": 2961431
+        },
+        {
+          "file": "home.html",
+          "offset": 3499563
+        },
+        {
+          "file": "home.html",
+          "offset": 3973464
+        },
+        {
+          "file": "home.html",
+          "offset": 4513055
+        },
+        {
+          "file": "home.html",
+          "offset": 5118421
+        },
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 1002060
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 12095840
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 551921
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 573972
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1451903
+        },
+        {
+          "file": "login.html",
+          "offset": 496106
+        },
+        {
+          "file": "login.html",
+          "offset": 993763
+        },
+        {
+          "file": "login.html",
+          "offset": 1526550
+        },
+        {
+          "file": "login.html",
+          "offset": 2064514
+        },
+        {
+          "file": "login.html",
+          "offset": 2538237
+        },
+        {
+          "file": "login.html",
+          "offset": 3077660
+        },
+        {
+          "file": "login.html",
+          "offset": 3655624
+        },
+        {
+          "file": "login.html",
+          "offset": 4153475
+        },
+        {
+          "file": "login.html",
+          "offset": 4686456
+        },
+        {
+          "file": "login.html",
+          "offset": 5224614
+        },
+        {
+          "file": "login.html",
+          "offset": 5698531
+        },
+        {
+          "file": "login.html",
+          "offset": 6238148
+        },
+        {
+          "file": "login.html",
+          "offset": 6816175
+        },
+        {
+          "file": "login.html",
+          "offset": 7314024
+        },
+        {
+          "file": "login.html",
+          "offset": 7847003
+        },
+        {
+          "file": "login.html",
+          "offset": 8385159
+        },
+        {
+          "file": "login.html",
+          "offset": 8859074
+        },
+        {
+          "file": "login.html",
+          "offset": 9398689
+        },
+        {
+          "file": "register.html",
+          "offset": 406301
+        },
+        {
+          "file": "register.html",
+          "offset": 937086
+        },
+        {
+          "file": "search-page.html",
+          "offset": 496106
+        },
+        {
+          "file": "search-page.html",
+          "offset": 993763
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1526550
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2064514
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2538237
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3077660
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3655624
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4153475
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4686456
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5224614
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5698531
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6238148
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6816175
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7314024
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7847003
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8385159
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8859074
+        },
+        {
+          "file": "search-page.html",
+          "offset": 9398689
+        }
+      ]
+    },
+    "creator-profile-frame-292eb19833.png": {
+      "file": "creator-profile-frame-292eb19833.png",
+      "mime": "image/png",
+      "sha256": "292eb19833557ea7d0d1698ef1704de88653cffe06cdefbbe880f450a3a0ec81",
+      "bytes": 71151,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 584213
+        },
+        {
+          "file": "home.html",
+          "offset": 2034285
+        },
+        {
+          "file": "login.html",
+          "offset": 599675
+        },
+        {
+          "file": "login.html",
+          "offset": 3759251
+        },
+        {
+          "file": "login.html",
+          "offset": 6919802
+        },
+        {
+          "file": "search-page.html",
+          "offset": 599675
+        },
+        {
+          "file": "search-page.html",
+          "offset": 3759251
+        },
+        {
+          "file": "search-page.html",
+          "offset": 6919802
+        }
+      ]
+    },
+    "creator-profile-frame-91d6a0d182.png": {
+      "file": "creator-profile-frame-91d6a0d182.png",
+      "mime": "image/png",
+      "sha256": "91d6a0d1823c33d59812c6d6913d24e69e471cadb1d5ea37a0c49b5c5dd04479",
+      "bytes": 97483,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 1082233
+        },
+        {
+          "file": "home.html",
+          "offset": 2532114
+        },
+        {
+          "file": "login.html",
+          "offset": 1097332
+        },
+        {
+          "file": "login.html",
+          "offset": 4257102
+        },
+        {
+          "file": "login.html",
+          "offset": 7417651
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1097332
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4257102
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7417651
+        }
+      ]
+    },
+    "creator-profile-frame-367cd578d9.png": {
+      "file": "creator-profile-frame-367cd578d9.png",
+      "mime": "image/png",
+      "sha256": "367cd578d9a67394ff631e8b782913ed70dd068bbcbaadc1f2d6629483624277",
+      "bytes": 101334,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 1615383
+        },
+        {
+          "file": "home.html",
+          "offset": 3065071
+        },
+        {
+          "file": "login.html",
+          "offset": 1630119
+        },
+        {
+          "file": "login.html",
+          "offset": 4790083
+        },
+        {
+          "file": "login.html",
+          "offset": 7950630
+        },
+        {
+          "file": "search-page.html",
+          "offset": 1630119
+        },
+        {
+          "file": "search-page.html",
+          "offset": 4790083
+        },
+        {
+          "file": "search-page.html",
+          "offset": 7950630
+        }
+      ]
+    },
+    "creator-profile-frame-02353a4b7d.png": {
+      "file": "creator-profile-frame-02353a4b7d.png",
+      "mime": "image/png",
+      "sha256": "02353a4b7d7c417d9e3d17b6cf6636b35c699e56c1635526687a1af4b1051152",
+      "bytes": 53171,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 2153713
+        },
+        {
+          "file": "home.html",
+          "offset": 3603216
+        },
+        {
+          "file": "login.html",
+          "offset": 2168086
+        },
+        {
+          "file": "login.html",
+          "offset": 5328244
+        },
+        {
+          "file": "login.html",
+          "offset": 8488789
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2168086
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5328244
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8488789
+        }
+      ]
+    },
+    "creator-profile-frame-90b85b649a.png": {
+      "file": "creator-profile-frame-90b85b649a.png",
+      "mime": "image/png",
+      "sha256": "90b85b649a7e12d154acaae1acf954b68266cd46cb178437fdd932549abf2050",
+      "bytes": 102442,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 2627799
+        },
+        {
+          "file": "home.html",
+          "offset": 4077107
+        },
+        {
+          "file": "login.html",
+          "offset": 2641809
+        },
+        {
+          "file": "login.html",
+          "offset": 5802161
+        },
+        {
+          "file": "login.html",
+          "offset": 8962704
+        },
+        {
+          "file": "search-page.html",
+          "offset": 2641809
+        },
+        {
+          "file": "search-page.html",
+          "offset": 5802161
+        },
+        {
+          "file": "search-page.html",
+          "offset": 8962704
+        }
+      ]
+    },
+    "creator-profile-image-8769fdad0a.png": {
+      "file": "creator-profile-image-8769fdad0a.png",
+      "mime": "image/png",
+      "sha256": "8769fdad0a938761c90bb6c14e88b4327078b23c0c413124799a0db6748212d9",
+      "bytes": 15548,
+      "sources": [
+        {
+          "file": "creator-profile.html",
+          "offset": 3172956
+        }
+      ]
+    },
+    "home-image-15c3a6ff74.png": {
+      "file": "home-image-15c3a6ff74.png",
+      "mime": "image/png",
+      "sha256": "15c3a6ff741d068c2bfc34254fa307f8976678d5a6954bc9000a18307cba97a7",
+      "bytes": 339515,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 12464
+        }
+      ]
+    },
+    "home-home-40d4ad3caf.png": {
+      "file": "home-home-40d4ad3caf.png",
+      "mime": "image/png",
+      "sha256": "40d4ad3caf3533fa3a620b7aa0851178190724a2bf8c0e24c061762111a22d8c",
+      "bytes": 98586,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 651431
+        },
+        {
+          "file": "home.html",
+          "offset": 6593965
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 2122956
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 856170
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 878221
+        },
+        {
+          "file": "register.html",
+          "offset": 1224754
+        }
+      ]
+    },
+    "home-home-e6c9467db0.png": {
+      "file": "home-home-e6c9467db0.png",
+      "mime": "image/png",
+      "sha256": "e6c9467db0b29f9ec7628a9191dee6d8b42b5387b6b520ca71f11fe8e257c53d",
+      "bytes": 71099,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 783564
+        },
+        {
+          "file": "home.html",
+          "offset": 6726168
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 2254522
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 987734
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 1009785
+        },
+        {
+          "file": "register.html",
+          "offset": 1356861
+        }
+      ]
+    },
+    "home-home-2f0049b55f.png": {
+      "file": "home-home-2f0049b55f.png",
+      "mime": "image/png",
+      "sha256": "2f0049b55fc96ce90ae2a59df89d5b6d1f0ad95d078ec24e42838f2275889155",
+      "bytes": 93493,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 879049
+        },
+        {
+          "file": "home.html",
+          "offset": 6821723
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 2349440
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 1082650
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 1104701
+        },
+        {
+          "file": "register.html",
+          "offset": 1452320
+        }
+      ]
+    },
+    "home-home-3ff1efea98.png": {
+      "file": "home-home-3ff1efea98.png",
+      "mime": "image/png",
+      "sha256": "3ff1efea98b235cb32ae2966d599cfdbfe38c0f3d56814dc5f09e1c64bad44f9",
+      "bytes": 70460,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1004394
+        },
+        {
+          "file": "home.html",
+          "offset": 6947138
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 2474218
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 1207427
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 1229478
+        },
+        {
+          "file": "register.html",
+          "offset": 1577639
+        }
+      ]
+    },
+    "home-home-f6e12716fa.png": {
+      "file": "home-home-f6e12716fa.png",
+      "mime": "image/png",
+      "sha256": "f6e12716fa1c99f6a07bcc52fbc4713b5238f76ce90a275c98a01abb55b13e8e",
+      "bytes": 79848,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1099027
+        },
+        {
+          "file": "home.html",
+          "offset": 7041841
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 2568284
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 1301492
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 1323543
+        },
+        {
+          "file": "register.html",
+          "offset": 1672246
+        }
+      ]
+    },
+    "home-image-9c1dea097c.png": {
+      "file": "home-image-9c1dea097c.png",
+      "mime": "image/png",
+      "sha256": "9c1dea097c6a0f3a8c28137231e85a7dbddf668c4e66af7a7274d07eea409510",
+      "bytes": 27963,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1206303
+        }
+      ]
+    },
+    "home-mask-375dacadb8.png": {
+      "file": "home-mask-375dacadb8.png",
+      "mime": "image/png",
+      "sha256": "375dacadb8c2215f99c513d2984a2a47c44d6825251486f1a29767be2882eb78",
+      "bytes": 149,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1243748
+        },
+        {
+          "file": "home.html",
+          "offset": 1291487
+        },
+        {
+          "file": "home.html",
+          "offset": 1308289
+        },
+        {
+          "file": "home.html",
+          "offset": 1350674
+        },
+        {
+          "file": "home.html",
+          "offset": 1391045
+        },
+        {
+          "file": "home.html",
+          "offset": 1404172
+        },
+        {
+          "file": "home.html",
+          "offset": 5820447
+        },
+        {
+          "file": "home.html",
+          "offset": 7171107
+        },
+        {
+          "file": "home.html",
+          "offset": 7196357
+        },
+        {
+          "file": "home.html",
+          "offset": 7221848
+        },
+        {
+          "file": "home.html",
+          "offset": 7249456
+        },
+        {
+          "file": "home.html",
+          "offset": 7266258
+        },
+        {
+          "file": "home.html",
+          "offset": 7280580
+        },
+        {
+          "file": "home.html",
+          "offset": 7306065
+        },
+        {
+          "file": "home.html",
+          "offset": 7348002
+        },
+        {
+          "file": "register.html",
+          "offset": 1795586
+        },
+        {
+          "file": "register.html",
+          "offset": 1807564
+        },
+        {
+          "file": "register.html",
+          "offset": 1820681
+        }
+      ]
+    },
+    "home-image-8696b5a3c4.png": {
+      "file": "home-image-8696b5a3c4.png",
+      "mime": "image/png",
+      "sha256": "8696b5a3c4bf89a78371305188f230fed6c15217f45b9effbd46f44fb6ffba4d",
+      "bytes": 35164,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1244438
+        }
+      ]
+    },
+    "home-image-4f7948f454.png": {
+      "file": "home-image-4f7948f454.png",
+      "mime": "image/png",
+      "sha256": "4f7948f454f592c4e7bc1ed81c9074b58106c3698f18311ded3f3c396425f242",
+      "bytes": 11921,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1292233
+        },
+        {
+          "file": "home.html",
+          "offset": 7250202
+        }
+      ]
+    },
+    "home-cone-01-2-924b0a63b2.png": {
+      "file": "home-cone-01-2-924b0a63b2.png",
+      "mime": "image/png",
+      "sha256": "924b0a63b2ddf4333e1deca1e21ddca436c22f37d53f46ac273194ffc2a59d1e",
+      "bytes": 31137,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1308985
+        }
+      ]
+    },
+    "home-cone-01-2-8203698f80.png": {
+      "file": "home-cone-01-2-8203698f80.png",
+      "mime": "image/png",
+      "sha256": "8203698f80c89620131742370e310d642031e614fae1c7a6e6179fd56cdc4eb1",
+      "bytes": 29614,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1351384
+        }
+      ]
+    },
+    "home-cone-01-2-3741d7ed35.png": {
+      "file": "home-cone-01-2-3741d7ed35.png",
+      "mime": "image/png",
+      "sha256": "3741d7ed3564d24f9f31b35adfceaeb0254948f1ab59e139d2c17afd76f5a218",
+      "bytes": 9183,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 1391755
+        },
+        {
+          "file": "register.html",
+          "offset": 1808266
+        }
+      ]
+    },
+    "home-frame-65ed80a823.png": {
+      "file": "home-frame-65ed80a823.png",
+      "mime": "image/png",
+      "sha256": "65ed80a8233eaf1bd3421928c4cfb2938a3fa4846807eef30155d9d3c7632420",
+      "bytes": 129910,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 4645472
+        }
+      ]
+    },
+    "home-image-eb157cb563.png": {
+      "file": "home-image-eb157cb563.png",
+      "mime": "image/png",
+      "sha256": "eb157cb56373e775c6a670c345e39420385d5d45257bac726e39448c4abc3b84",
+      "bytes": 432572,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 5222354
+        }
+      ]
+    },
+    "home-image-69d19a8e47.png": {
+      "file": "home-image-69d19a8e47.png",
+      "mime": "image/png",
+      "sha256": "69d19a8e47f2eec24b70f2c885140933efef5c86ed4312cec28c64764c2d10de",
+      "bytes": 14623,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 5800789
+        }
+      ]
+    },
+    "home-image-7be5f04241.png": {
+      "file": "home-image-7be5f04241.png",
+      "mime": "image/png",
+      "sha256": "7be5f04241e0e4ade0f39a7bf4da7616bc0b3974605b655af2b2b59530f75cf6",
+      "bytes": 436863,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 5826290
+        }
+      ]
+    },
+    "home-image-868b505a3a.png": {
+      "file": "home-image-868b505a3a.png",
+      "mime": "image/png",
+      "sha256": "868b505a3aedcda5d0e60e016d07ac224e7ffc6fbf84e3086f9a61022ff82f74",
+      "bytes": 16323,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7149185
+        }
+      ]
+    },
+    "home-cone-01-2-99d4f12ec9.png": {
+      "file": "home-cone-01-2-99d4f12ec9.png",
+      "mime": "image/png",
+      "sha256": "99d4f12ec921d002be86bb9513bed1c66a94294d181838f604a608c096ab4931",
+      "bytes": 9088,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7184064
+        }
+      ]
+    },
+    "home-image-7b7c8a5d35.png": {
+      "file": "home-image-7b7c8a5d35.png",
+      "mime": "image/png",
+      "sha256": "7b7c8a5d351711488753f7cd4d65a461507bed9f75efab6aa8f32b46c036f56e",
+      "bytes": 18469,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7197059
+        }
+      ]
+    },
+    "home-image-d9a07c294e.png": {
+      "file": "home-image-d9a07c294e.png",
+      "mime": "image/png",
+      "sha256": "d9a07c294eca07e4eb3e54f76ea9dcf30ff7f5844a55521bc7041b0c066c63f5",
+      "bytes": 20065,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7222539
+        }
+      ]
+    },
+    "home-cone-01-2-4507d0290b.png": {
+      "file": "home-cone-01-2-4507d0290b.png",
+      "mime": "image/png",
+      "sha256": "4507d0290b3373be38d22bfea86af51ca14020475315cc0732fb2d3708939e0d",
+      "bytes": 10088,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7266955
+        }
+      ]
+    },
+    "home-cone-01-2-ed0ce392c8.png": {
+      "file": "home-cone-01-2-ed0ce392c8.png",
+      "mime": "image/png",
+      "sha256": "ed0ce392c8d8e4968ba6041b41fc9df72fd09e81ef4c40e3b8c668c8c3c48e36",
+      "bytes": 18451,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7281288
+        }
+      ]
+    },
+    "home-cone-01-2-f720bcbad8.png": {
+      "file": "home-cone-01-2-f720bcbad8.png",
+      "mime": "image/png",
+      "sha256": "f720bcbad87698a0aa5f7a2fd92e1646c88bbcbbf1ce0c880b26733da70d21cd",
+      "bytes": 30792,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7306773
+        }
+      ]
+    },
+    "home-ellipse-f4921d3e28.png": {
+      "file": "home-ellipse-f4921d3e28.png",
+      "mime": "image/png",
+      "sha256": "f4921d3e28891eebfbe9ad984116890801531ca085d7208864cedbbbc0917d5a",
+      "bytes": 13155,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7352094
+        }
+      ]
+    },
+    "home-ellipse-08e3eab14a.png": {
+      "file": "home-ellipse-08e3eab14a.png",
+      "mime": "image/png",
+      "sha256": "08e3eab14a0edb9eb94ee344998ae7cd6d5e2f88b93e417a5c7315b2e08a4887",
+      "bytes": 12984,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7371525
+        }
+      ]
+    },
+    "home-ellipse-eae493dc0f.png": {
+      "file": "home-ellipse-eae493dc0f.png",
+      "mime": "image/png",
+      "sha256": "eae493dc0f682acdb8f32a34ad33bcaebf93958425d8cde8eca1dbbd28b74844",
+      "bytes": 9001,
+      "sources": [
+        {
+          "file": "home.html",
+          "offset": 7390734
+        }
+      ]
+    },
+    "course-details-course-details-1dd4796eb5.jpg": {
+      "file": "course-details-course-details-1dd4796eb5.jpg",
+      "mime": "image/jpeg",
+      "sha256": "1dd4796eb5653abd956d5964e49231759ed010163d293f2aa28627eb5ad11ead",
+      "bytes": 32026,
+      "sources": [
+        {
+          "file": "imgs/Course Details.svg",
+          "offset": 888877
+        }
+      ]
+    },
+    "course-details-course-details-af5773462d.jpg": {
+      "file": "course-details-course-details-af5773462d.jpg",
+      "mime": "image/jpeg",
+      "sha256": "af5773462d7622715e8d5a8599e039acb957e096752d35d89156be618913ad10",
+      "bytes": 43223,
+      "sources": [
+        {
+          "file": "imgs/Course Details.svg",
+          "offset": 931699
+        }
+      ]
+    },
+    "course-details-course-details-92a3408308.jpg": {
+      "file": "course-details-course-details-92a3408308.jpg",
+      "mime": "image/jpeg",
+      "sha256": "92a3408308f0e5fa2bfdef1fd4cdcdd178972d8fa474a5be6ecc00dbe2881a71",
+      "bytes": 54437,
+      "sources": [
+        {
+          "file": "imgs/Course Details.svg",
+          "offset": 989449
+        }
+      ]
+    },
+    "course-details-course-details-afbadecd95.jpg": {
+      "file": "course-details-course-details-afbadecd95.jpg",
+      "mime": "image/jpeg",
+      "sha256": "afbadecd95ed8c6dcfe11809251f3a0706246f7553b5adbce6fb2da9c5172220",
+      "bytes": 40587,
+      "sources": [
+        {
+          "file": "imgs/Course Details.svg",
+          "offset": 1062151
+        }
+      ]
+    },
+    "course-details-course-details-6bdec61b47.jpg": {
+      "file": "course-details-course-details-6bdec61b47.jpg",
+      "mime": "image/jpeg",
+      "sha256": "6bdec61b47b4152599b20de336b65c6cb837ffd4c35d8f398886dc466fc6c53b",
+      "bytes": 152596,
+      "sources": [
+        {
+          "file": "imgs/Course Details.svg",
+          "offset": 1116386
+        },
+        {
+          "file": "imgs/Course Lessons.svg",
+          "offset": 985132
+        },
+        {
+          "file": "imgs/Course Reviews.svg",
+          "offset": 1234581
+        }
+      ]
+    },
+    "creator-profile-creator-profile-56e727c127.jpg": {
+      "file": "creator-profile-creator-profile-56e727c127.jpg",
+      "mime": "image/jpeg",
+      "sha256": "56e727c1278e49b8ba2ab9f7c13e16b71a667a1708651b741891683c5bba272f",
+      "bytes": 100929,
+      "sources": [
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 575343
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 11744526
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1025190
+        }
+      ]
+    },
+    "creator-profile-creator-profile-8eaa5e0652.jpg": {
+      "file": "creator-profile-creator-profile-8eaa5e0652.jpg",
+      "mime": "image/jpeg",
+      "sha256": "8eaa5e06529402a6fd10d8223e3daae02c9949338b7f8d62423ac01764e8a17e",
+      "bytes": 55549,
+      "sources": [
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 1102585
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 12196367
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 185712
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 207763
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1552427
+        }
+      ]
+    },
+    "creator-profile-creator-profile-8096f37ca2.jpg": {
+      "file": "creator-profile-creator-profile-8096f37ca2.jpg",
+      "mime": "image/jpeg",
+      "sha256": "8096f37ca2e6618139c458464199db4ab4c573f57d35ee0880ee585c0d034583",
+      "bytes": 73707,
+      "sources": [
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 1176771
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 12270555
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 652445
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 674496
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1626612
+        }
+      ]
+    },
+    "creator-profile-creator-profile-9a66fe68c4.jpg": {
+      "file": "creator-profile-creator-profile-9a66fe68c4.jpg",
+      "mime": "image/jpeg",
+      "sha256": "9a66fe68c4bdf83a10c2b5e8d266de64120b677f04790bce8c92ab5a0023c3ba",
+      "bytes": 75644,
+      "sources": [
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 1275165
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 12368951
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1725005
+        }
+      ]
+    },
+    "creator-profile-creator-profile-764ea2b557.jpg": {
+      "file": "creator-profile-creator-profile-764ea2b557.jpg",
+      "mime": "image/jpeg",
+      "sha256": "764ea2b5578b6502fd316b66c4649ce6ea0cac6f809e8265831da97edc12741e",
+      "bytes": 32624,
+      "sources": [
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 1376143
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 12469931
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1825982
+        }
+      ]
+    },
+    "creator-profile-creator-profile-df575fc9d2.jpg": {
+      "file": "creator-profile-creator-profile-df575fc9d2.jpg",
+      "mime": "image/jpeg",
+      "sha256": "df575fc9d20b019dfc0042451e928184ee19b1d774c20b57df5f823b2ef3da13",
+      "bytes": 58388,
+      "sources": [
+        {
+          "file": "imgs/Creator Profile.svg",
+          "offset": 1419761
+        },
+        {
+          "file": "imgs/Home.svg",
+          "offset": 12513551
+        },
+        {
+          "file": "imgs/Search Page.svg",
+          "offset": 1869599
+        }
+      ]
+    },
+    "home-home-851e77d06c.png": {
+      "file": "home-home-851e77d06c.png",
+      "mime": "image/png",
+      "sha256": "851e77d06c1c727c2355f20553c8524b6905ef60a57612559a531219d1067f28",
+      "bytes": 230886,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 1634246
+        }
+      ]
+    },
+    "home-home-021f81bfc4.png": {
+      "file": "home-home-021f81bfc4.png",
+      "mime": "image/png",
+      "sha256": "021f81bfc4bc80c9c6019dbf71feea46eaa197bb8f0e971c11a350440d69413a",
+      "bytes": 1196318,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 2674868
+        }
+      ]
+    },
+    "home-home-92f21ffd63.png": {
+      "file": "home-home-92f21ffd63.png",
+      "mime": "image/png",
+      "sha256": "92f21ffd63536bdc113dc47ae40776960d297567e4b03b0aff76c8d33da6e9d1",
+      "bytes": 1328245,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 4270080
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 1408075
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 1430126
+        }
+      ]
+    },
+    "home-home-2b33854c48.png": {
+      "file": "home-home-2b33854c48.png",
+      "mime": "image/png",
+      "sha256": "2b33854c48d71108555efcbc5b0148a3f495afb7d018f9f45c1f84533ac2b517",
+      "bytes": 1341108,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 6041197
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 3179190
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 3201241
+        }
+      ]
+    },
+    "home-home-a96322e3c1.png": {
+      "file": "home-home-a96322e3c1.png",
+      "mime": "image/png",
+      "sha256": "a96322e3c1005b41a07fbb031aa74bde33f116968935efb55a9e18e25d0e9f49",
+      "bytes": 1930456,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 7829462
+        }
+      ]
+    },
+    "home-home-8d7caeb375.png": {
+      "file": "home-home-8d7caeb375.png",
+      "mime": "image/png",
+      "sha256": "8d7caeb375b70e7a433909f95baaf3e501982b14fdb339371509f70d3d31a4fb",
+      "bytes": 1005658,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 10403527
+        },
+        {
+          "file": "imgs/Login.svg",
+          "offset": 4967453
+        },
+        {
+          "file": "imgs/Register.svg",
+          "offset": 4989504
+        }
+      ]
+    },
+    "home-home-90a0cf2a45.png": {
+      "file": "home-home-90a0cf2a45.png",
+      "mime": "image/png",
+      "sha256": "90a0cf2a45036d23d7f8ec0b8c5c58e02d0ea4e5d0efa20fe50273951e87dea7",
+      "bytes": 209574,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 12591523
+        }
+      ]
+    },
+    "home-home-f5b5a7e7fe.png": {
+      "file": "home-home-f5b5a7e7fe.png",
+      "mime": "image/png",
+      "sha256": "f5b5a7e7fe50880d68ba6c6a8239f9df919ce8fc9282165b4511e16747b5bb67",
+      "bytes": 1386942,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 12871076
+        }
+      ]
+    },
+    "home-home-abfb8c9cef.png": {
+      "file": "home-home-abfb8c9cef.png",
+      "mime": "image/png",
+      "sha256": "abfb8c9cefcc4993ead62dfdfbe0f6b0886a846e90128276cabc71d811ce1690",
+      "bytes": 46862,
+      "sources": [
+        {
+          "file": "imgs/Home.svg",
+          "offset": 14829750
+        }
+      ]
+    },
+    "register-frame-bd8600e5b3.png": {
+      "file": "register-frame-bd8600e5b3.png",
+      "mime": "image/png",
+      "sha256": "bd8600e5b3255cadbcfcfe44ffbf20bf98021fa8335a3a803ea2bee015d5d687",
+      "bytes": 70927,
+      "sources": [
+        {
+          "file": "register.html",
+          "offset": 12695
+        }
+      ]
+    },
+    "register-frame-0e9c78ece1.png": {
+      "file": "register-frame-0e9c78ece1.png",
+      "mime": "image/png",
+      "sha256": "0e9c78ece1e23175223e03b9976a8e66864f5c1fbf183522cf9f1ffef82a530e",
+      "bytes": 96273,
+      "sources": [
+        {
+          "file": "register.html",
+          "offset": 509670
+        }
+      ]
+    },
+    "register-image-7d4e3cabf3.png": {
+      "file": "register-image-7d4e3cabf3.png",
+      "mime": "image/png",
+      "sha256": "7d4e3cabf386b8d5e23362a4e10e6a87e73902464a75455e28818d345f48d29b",
+      "bytes": 11915,
+      "sources": [
+        {
+          "file": "register.html",
+          "offset": 1779540
+        }
+      ]
+    },
+    "register-cone-01-2-f78b01a8d3.png": {
+      "file": "register-cone-01-2-f78b01a8d3.png",
+      "mime": "image/png",
+      "sha256": "f78b01a8d3a7474bdb235a5d4ebb0af502fb44454b51e05a4e7173fde70e76b7",
+      "bytes": 8336,
+      "sources": [
+        {
+          "file": "register.html",
+          "offset": 1796277
+        }
+      ]
+    }
+  }
+}

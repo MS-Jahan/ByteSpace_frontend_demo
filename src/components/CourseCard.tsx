@@ -1,27 +1,56 @@
-import { useState } from 'react'
+import type { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import type { Course } from '../data'
+import { formatPrice } from '../data'
+import { AvatarStack } from './AvatarStack'
 import { Icon } from './Icons'
 
-export function CourseCard({ course }: { course: Course }) {
-  const [saved, setSaved] = useState(false)
+type CourseCardProps = {
+  course: Course
+  /**
+   * Purely visual copy (the Growth section and auth collage): inert, hidden from
+   * assistive technology and without links.
+   */
+  decorative?: boolean
+}
+
+export function CourseCard({ course, decorative = false }: CourseCardProps) {
+  const link = (to: string, children: ReactNode, props: { tabIndex?: number; 'aria-hidden'?: true } = {}) =>
+    decorative ? <span>{children}</span> : <Link to={to} {...props}>{children}</Link>
+  const courseUrl = `/courses/${course.slug}`
 
   return (
-    <article className="course-card">
-      <div className="course-card__image-wrap" style={{ backgroundColor: course.accent }}>
-        <img className="course-card__image" src={course.image} alt="" loading="lazy" />
-        <span className="course-card__category">{course.category}</span>
-        <button className="course-card__save" type="button" aria-label={`${saved ? 'Remove saved' : 'Save'} ${course.title}`} aria-pressed={saved} onClick={() => setSaved((current) => !current)}>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.75A1.75 1.75 0 0 1 7.75 3h8.5A1.75 1.75 0 0 1 18 4.75V21l-6-3.8L6 21V4.75Z" /></svg>
-        </button>
+    <article className={`course-card${decorative ? ' course-card--decorative' : ''}`} aria-hidden={decorative || undefined} inert={decorative || undefined}>
+      <div className="course-card__media">
+        {link(courseUrl, <img className="course-card__image" src={course.image} alt="" loading="lazy" />, {
+          tabIndex: -1,
+          'aria-hidden': true,
+        })}
+        <span className="course-card__pills">
+          <span>{course.lessons} Lessons</span>
+          <span>{course.duration}</span>
+          <span>{course.comments} Comments</span>
+        </span>
       </div>
-      <div className="course-card__content">
-        <div className="course-card__meta"><span>{course.level}</span><span>{course.lessons}</span></div>
-        <h3>{course.title}</h3>
-        <p className="course-card__teacher"><span className="course-card__initials">{course.initials}</span> By {course.instructor}</p>
-        <div className="course-card__bottom">
-          <span className="course-card__rating"><Icon name="star" /> {course.rating} <span>({course.reviews})</span></span>
-          <strong>{course.price}</strong>
+      <div className="course-card__body">
+        <div className="course-card__title-row">
+          <h3 title={course.title}>{link(courseUrl, course.title)}</h3>
+          <span className="course-card__rating">
+            {course.rating.toFixed(1)} <Icon name="star" />
+            <span className="sr-only">out of 5 from {course.details.reviewCount} reviews</span>
+          </span>
         </div>
+        <p className="course-card__teacher">by {link(`/creators/${course.creatorSlug}`, course.instructor)}</p>
+        <div className="course-card__footer">
+          <span className="course-card__level">
+            <Icon name="level" /> {course.level}
+          </span>
+          <AvatarStack />
+        </div>
+        <p className="course-card__price">
+          <strong>{formatPrice(course.price)}</strong>
+          <span>/lifetime</span>
+        </p>
       </div>
     </article>
   )

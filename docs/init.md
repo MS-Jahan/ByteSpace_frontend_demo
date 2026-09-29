@@ -19,9 +19,10 @@
 - Application source and static assets live at the project root, outside `docs/`; `docs/` is reserved for notes and project references.
 - The user approved the phased implementation plan recorded in [plan.md](plan.md).
 - Include `/login` and `/signup` as visual demo routes with browser-side validation and feedback only. There is no backend, real account creation, authentication, or credential/newsletter submission or persistence.
-- The original request said public GitHub, but the later approved delivery plan superseded that with the **private** repository `MS-Jahan/ByteSpace_New_frontend_demo` and a PR targeting `main`.
+- The original request said public GitHub. The repository `MS-Jahan/ByteSpace_New_frontend_demo` (PR targeting `main`) stays **private until all planned work is done**, then it is made public (confirmed 2026-09-29).
+- 2026-09-29 audit: "100% replicate the design" was not yet met, and five designs were unbuilt. The plan was extended with Phases 6–10 and implemented and committed on the feature branch. Status: every design route is built and compared against its PNG at 1440 px (e2e diffs 1.3–3.6 %, Search 9.7 %); see [status.md](status.md) for what is done and next, plus [review.md](review.md) and [plan.md](plan.md).
 - Keep `figma-samples/` local and ignored by Git; include only the extracted, app-used assets and manifest.
-- Use Poppins, Satoshi, and Clash Display hosted typefaces with local system fallbacks.
+- Typefaces: Poppins from Google Fonts; Satoshi and Clash Display self-hosted under `public/fonts/` (Fontshare's combined request resolved Satoshi to another family), with system fallbacks.
 
 ## Design-reference note
 

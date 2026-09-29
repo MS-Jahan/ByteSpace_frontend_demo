@@ -11,3 +11,8 @@ coverage/
 
 # Local workspace metadata; do not publish.
 /.freebuff/
+
+# Browser tooling and test output
+/.playwright-mcp/
+/test-results/
+/playwright-report/

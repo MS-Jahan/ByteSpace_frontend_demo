@@ -83,6 +83,15 @@ for (const sourcePath of sourceFiles) {
   if (occurrences.length) manifest.samples[relativeSource] = occurrences
 }
 
+// Keep the `exports` section written by scripts/export-figma-assets.mjs.
+try {
+  const previous = JSON.parse(await readFile(manifestPath, 'utf8'))
+  if (previous.exports) manifest.exports = previous.exports
+  if (previous.derived) manifest.derived = previous.derived // written by scripts/make-cutouts.py
+} catch {
+  // First run: no manifest yet.
+}
+
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`)
 console.log(`Extracted ${byHash.size} unique image assets from ${sourceFiles.length} design files.`)
 console.log(`Manifest: ${path.relative(root, manifestPath)}`)

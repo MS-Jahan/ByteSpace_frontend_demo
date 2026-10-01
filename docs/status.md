@@ -34,8 +34,8 @@ The e2e metric is lenient (pixelmatch threshold 0.2); the strict figures are the
 1. **Opus P2 findings** (23, see docs/code-review.md): search scope-menu keyboard behaviour, hidden submit button in tab order, invalid `?level/?category/?page` values, notice timer races and `display:none` status regions, heading-level skips, `--muted` contrast (~3.7:1), tap-target CSS side effects, hash-scroll offset and repeat clicks, e2e config hazards (reuses any server on 4173), test gaps, doc inaccuracies.
 2. **P1-4 completion:** move hero and CTA copy out of `Stage` into normal flow so zoom works, without regressing the 1440 layout.
 3. **Remaining visual items** (docs/visual-review.md; unfinished review):
-   - Login/Register: pyramid should sit in front of the back card (a z-index change had no visible effect; the cause is not found); card star colour and "26+" chip colours.
-   - Search: pager shows one page; the design shows 1–5 (would need about 90 courses, or an intentional demo pager). Rows 4–6 differ by content.
+   - Login/Register: card star colour and "26+" chip colours. (White squiggle now over the front and students cards: `.auth__shape--squiggle` z-index 6.)
+   - Search: catalogue now 90 courses (generated entries in `src/data.ts`), so the pager shows 1–5. Rows 4–6 differ by content.
    - Lessons is 12 px shorter than the design; Details hero content sits 2 px left of the design.
    - Creator (7.9 % strict) and 404 (9.5 %) not tuned; footer newsletter 1 px offsets.
    - Responsive 768/390/320 for Lessons, Reviews, Creator, Legal, 404 not fully reviewed; hero float cards are about 9 px on phones.

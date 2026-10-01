@@ -2,6 +2,12 @@
 
 A responsive, route-based React recreation of ByteSpace's course-discovery design. Includes the complete landing page plus local demo login and signup screens.
 
+## Review
+
+- **Pull request:** [#1 Build responsive ByteSpace learning frontend](https://github.com/MS-Jahan/ByteSpace_New_frontend_demo/pull/1). The full implementation lives on the `feat/bytespace-frontend` branch, which this PR merges into `main`. Review the code and the changes there.
+- **Live site:** deployed on Vercel (link in the submission).
+- **Where to look:** the landing page at `/`, then the bonus `/login` and `/signup`, then `/search` (five-page pager).
+
 ## Quick start
 
 Requirements: Node.js 20+ and npm.

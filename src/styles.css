@@ -782,12 +782,12 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing:
    overflowing into the card. */
 .auth__collage { position: absolute; top: 160px; right: 35px; left: -25px; width: auto; }
 .auth__stack { position: absolute; width: 373px; }
-/* Design z-order (traced from the Figma export): back card lowest, the lime
-   pyramid and white squiggle in front of it, the front card above those, the
-   torus ring fully visible over the front card, and the students card on top. */
+/* Z-order: back card lowest, the lime pyramid in front of it, the front card
+   above that, the torus ring over the front card, the students card above, and
+   the white squiggle (the spring) over both cards. */
 .auth__stack--back { z-index: 1; }
 .auth__shape--pyramid { z-index: 2; }
-.auth__shape--squiggle { z-index: 2; }
+.auth__shape--squiggle { z-index: 6; }
 .auth__stack--front { z-index: 3; }
 .auth__shape--torus { z-index: 4; }
 .auth__happy { position: absolute; z-index: 5; display: flex; width: 259px; flex-direction: column; padding: 19px 16px 16px; border-radius: 16px; background: var(--lime); color: var(--text); }

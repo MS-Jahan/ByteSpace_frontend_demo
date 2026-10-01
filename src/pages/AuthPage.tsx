@@ -13,10 +13,10 @@ import { isValidEmail } from '../validation'
 /**
  * The auth collage in Figma pixels of the 1440 canvas. The stage origin sits at
  * frame (95, 280), so every offset below is the design position minus that.
- * Z-order follows the design (traced from the Figma export): the back card is
- * lowest, the lime pyramid and white squiggle overlap it, the front card sits
- * above those, the torus ring is fully visible over the front card, and the
- * students card is on top.
+ * Z-order: the back card is lowest, the lime pyramid overlaps it, the front card
+ * sits above that, the torus ring is fully visible over the front card, the
+ * students card is above those, and the white squiggle (the spring) is on top
+ * of both cards.
  */
 const AUTH_ART = {
   pyramid: { x: 0.03, y: 421.6, w: 188.9, h: 188.9 },

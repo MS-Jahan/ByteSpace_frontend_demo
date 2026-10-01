@@ -1,0 +1,1251 @@
+/* ByteSpace New — design system, page styles and responsive rules.
+   Values are taken from the supplied Figma exports (see docs/plan.md). */
+
+/* Self-hosted Fontshare faces (free licence). Poppins comes from Google Fonts in index.html. */
+@font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Satoshi'; src: url('/fonts/Satoshi-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Clash Display'; src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+
+:root {
+  --blue: #003be2;
+  --blue-deep: #032fae;
+  --lime: #d4fb20;
+  --lime-deep: #b9e000;
+  --ink: #040819;
+  --text: #242528;
+  --body: #4b4c53;
+  --muted: #82868e;
+  --soft: #4f4f4f;
+  --line: #e5e6e8;
+  --border: #ced0d3;
+  --input-border: #e5e6e8;
+  --track: #f6f6f6;
+  --section-bg: #fafafa;
+  --lime-ring: #cbfc01;
+  --surface: #f5f5f6;
+  --surface-soft: #fafafa;
+  --font-display: 'Poppins', system-ui, sans-serif;
+  --font-brand: 'Clash Display', 'Poppins', system-ui, sans-serif;
+  --font-body: 'Satoshi', system-ui, sans-serif;
+  --container: 1200px;
+  --header: 120px;
+  --radius-card: 20px;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { min-width: 320px; scroll-behavior: smooth; scroll-padding-top: calc(var(--header) + 12px); }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+body, button, input, select { font-family: var(--font-body); }
+button, input, select { font: inherit; }
+button { color: inherit; cursor: pointer; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+ul, ol, dl, dd, figure, blockquote { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.0125em; }
+::selection { color: var(--ink); background: var(--lime); }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+/* Blue surfaces need the lime ring instead. */
+.site-header :focus-visible,
+.hero :focus-visible,
+.search-hero :focus-visible,
+.course-hero :focus-visible,
+.creator-hero :focus-visible,
+.creator-cta :focus-visible,
+.not-found :focus-visible,
+.auth__intro :focus-visible,
+.auth__top :focus-visible { outline-color: var(--lime); }
+.hero-search__field:focus-within,
+.newsletter-form:focus-within { outline: 3px solid var(--lime); outline-offset: 3px; }
+.newsletter-form:focus-within { outline-color: var(--blue); }
+
+.container { width: min(var(--container), 100% - 64px); margin-inline: auto; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.app-shell { position: relative; }
+.skip-link {
+  position: absolute;
+  z-index: 100;
+  top: -60px;
+  left: 16px;
+  padding: 12px 18px;
+  border-radius: 0 0 12px 12px;
+  background: var(--lime);
+  color: var(--ink);
+  font-weight: 600;
+  transition: top 0.16s ease;
+}
+.skip-link:focus { top: 0; }
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+@media (pointer: coarse) { .button { min-height: 44px; } }
+.button svg { width: 18px; height: 18px; }
+.button--lime { background: var(--lime); color: var(--text); }
+.button--lime:hover { background: #e2ff5c; }
+.button--outline { border-color: var(--border); background: #fff; color: var(--text); }
+.button--outline:hover { border-color: var(--blue); color: var(--blue); }
+.button--sm,
+.button--small { padding: 8px 24px; font-size: 16px; line-height: 19.2px; }
+.button:hover { transform: translateY(-1px); }
+.icon-button {
+  display: inline-grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.icon-button svg { width: 24px; height: 24px; }
+
+/* ---------- Brand + header ---------- */
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); }
+.brand--light { color: #f5f5f6; }
+.brand__mark { width: 29px; height: 32px; fill: var(--lime); flex: 0 0 auto; }
+.brand__name { font-family: var(--font-brand); font-size: 24px; font-weight: 700; }
+
+.site-header { position: absolute; z-index: 20; top: 0; right: 0; left: 0; height: var(--header); color: #f5f5f6; }
+.site-header__inner { position: relative; display: flex; height: 100%; align-items: center; gap: 24px; }
+.site-nav { position: absolute; left: 50%; display: flex; align-items: center; justify-content: center; gap: 24px; transform: translateX(-50%); }
+.site-header__actions { margin-left: auto; }
+.site-nav > a { font-size: 16px; font-weight: 400; color: #f5f5f6; transition: color 0.16s ease; }
+.site-nav > a:hover,
+.site-nav > a.active { color: #fff; }
+.site-nav > a.active { font-weight: 500; }
+.site-header__actions { display: flex; align-items: center; gap: 24px; }
+.site-header__signin,
+.site-header__join { font-size: 16px; color: #f5f5f6; }
+.site-header__signin:hover,
+.site-header__join:hover { color: #fff; }
+.site-header__cart { display: grid; width: 40px; height: 40px; place-items: center; border: 0; background: transparent; color: #f5f5f6; }
+.site-header__cart { margin-right: -8px; }
+.site-header__cart svg { width: 24px; height: 24px; }
+.site-header__notice { margin: 0; color: rgba(245, 245, 246, 0.8); font-size: 12px; text-align: right; }
+.site-header__notice:empty { display: none; }
+.site-header__toggle { display: none; }
+.site-nav__mobile-auth,
+.site-nav__cart,
+.site-nav__notice { display: none; }
+
+/* ---------- Design-size stage (scaled art) ---------- */
+/* A composition drawn in Figma pixels. `--s` (set by <Stage>) shrinks it to fit its box. */
+.stage { position: relative; width: 100%; height: calc(var(--stage-h) * var(--s, 1) * 1px); }
+.stage__inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: calc(var(--stage-w) * 1px);
+  height: calc(var(--stage-h) * 1px);
+  transform: translateX(-50%) scale(var(--s, 1));
+  transform-origin: top center;
+}
+/* Simplified restaging for narrow screens (see Stage's `mobile` prop): the
+   scaled-down design composition is hidden and a static composition is shown
+   instead, so text never drops below legible sizes. */
+.stage__mobile { display: none; }
+@media (max-width: 480px) {
+  .stage:has(> .stage__mobile) .stage__inner { display: none; }
+  .stage:has(> .stage__mobile) .stage__mobile { display: block; }
+}
+/* Decorative 3D shape placed in stage pixels (see Shape3D). */
+.ornament {
+  position: absolute;
+  z-index: 2;
+  left: calc(var(--x) * 1px);
+  top: calc(var(--y) * 1px);
+  width: calc(var(--w) * 1px);
+  height: calc(var(--h, var(--w)) * 1px);
+  max-width: none;
+  pointer-events: none;
+}
+
+/* ---------- Hero ---------- */
+.hero { position: relative; isolation: isolate; overflow: clip; background: var(--blue); color: #fff; }
+.grid-overlay {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.12) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 2px, transparent 2px);
+  background-size: 120px 120px;
+}
+.hero__stage { z-index: 1; }
+.hero__ring {
+  position: absolute;
+  z-index: 1;
+  top: 582px;
+  left: 145px;
+  width: 1149px;
+  height: 1149px;
+  border: 320px solid var(--lime-ring);
+  border-radius: 50%;
+  background: none;
+}
+.hero__content { position: absolute; z-index: 4; top: 169px; left: 0; display: flex; width: 100%; flex-direction: column; align-items: center; text-align: center; }
+.hero h1 { max-width: 935px; margin: 0; font-size: 72px; font-weight: 600; line-height: 1.2; }
+.hero__intro { max-width: 880px; margin: 32px 0 0; color: #e5e6e8; font-size: 18px; line-height: 1.6; }
+.hero-search { display: flex; align-items: flex-start; gap: 16px; margin-top: 60px; }
+.hero-search__field {
+  display: flex;
+  width: 461px;
+  max-width: 100%;
+  height: 52px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+  border-radius: 24px;
+  background: #fff;
+  color: var(--text);
+}
+.hero-search__field svg { width: 24px; height: 24px; flex: 0 0 auto; color: var(--muted); }
+.hero-search__field input { width: 100%; min-width: 0; height: 100%; border: 0; outline: 0; background: transparent; color: var(--text); font-size: 18px; }
+.hero-search__field input::placeholder { color: var(--muted); opacity: 1; }
+.hero-search__field input:focus-visible { outline: 0; }
+.hero-search > .button,
+.hero-search > .scope-menu { flex: none; }
+.button--scope svg { width: 16px; height: 16px; }
+.scope-menu { position: relative; }
+.scope-menu__list { position: absolute; z-index: 5; top: calc(100% + 8px); right: 0; min-width: 100%; padding: 8px; border-radius: 16px; background: #fff; text-align: left; }
+.scope-menu__list button { width: 100%; padding: 8px 16px; border: 0; border-radius: 12px; background: var(--surface); color: var(--text); font-size: 16px; font-weight: 500; text-align: left; }
+
+.hero__art { position: absolute; z-index: 3; inset: 0; pointer-events: none; }
+.hero__person { position: absolute; top: 510px; left: 410px; width: 722px; height: 515px; max-width: none; }
+.hero__card--theme { top: 639px; left: 404px; width: 208px; gap: 1px; }
+.hero__card--progress { top: 651px; left: 842px; width: 232px; }
+.hero__card--students { top: 837px; left: 328px; width: 258px; }
+
+/* White cards floating over the art. */
+.float-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fff;
+  color: var(--text);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.float-card strong { font-size: 16px; font-weight: 500; line-height: 19px; }
+.float-card small { white-space: nowrap; display: flex; align-items: center; gap: 4px; margin-top: 2px; color: var(--muted); font-size: 12px; line-height: 15px; }
+.float-card small b { color: var(--text); font-weight: 400; }
+.float-card small svg { width: 14px; height: 13px; fill: var(--lime); }
+.float-card--students small { gap: 3px; }
+.float-card--progress small { margin-top: 0; color: var(--text); font-size: 14px; font-weight: 500; line-height: 17px; }
+.float-card--progress strong { margin-top: 14px; font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 48px; font-weight: 600; line-height: 48px; }
+.float-card--progress .progress-line { margin-top: 12px; }
+.float-card--students .avatar-stack { margin-top: 11px; }
+.progress-line { display: block; width: 100%; height: 8px; overflow: hidden; border-radius: 999px; background: var(--track); }
+.progress-line span { display: block; height: 100%; border-radius: inherit; background: var(--lime); }
+
+/* ---------- 3D shapes (grey render + hard-light tint clipped to its silhouette) ---------- */
+.shape3d { isolation: isolate; }
+.shape3d img { display: block; width: 100%; height: 100%; max-width: none; }
+.shape3d::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  mix-blend-mode: hard-light;
+  -webkit-mask: var(--shape) center / 100% 100% no-repeat;
+  mask: var(--shape) center / 100% 100% no-repeat;
+}
+.shape3d--lime::after { background: var(--lime); }
+.shape3d--white::after { background: var(--surface); }
+
+/* ---------- Avatar stack ---------- */
+.avatar-stack { display: inline-flex; align-items: center; }
+.avatar-stack img,
+.avatar-stack__count {
+  width: 32px;
+  height: 32px;
+  margin-left: -8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.avatar-stack img:first-child { margin-left: 0; }
+.avatar-stack img { object-fit: cover; background: var(--surface); }
+.avatar-stack__count {
+  display: grid;
+  place-items: center;
+  background: var(--lime);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 500;
+}
+.float-card .avatar-stack img { width: 40px; height: 40px; margin-left: -13px; border: 0; }
+.float-card .avatar-stack img:first-child { margin-left: 0; }
+.float-card .avatar-stack__count { flex: none; font-weight: 700; width: 43px; height: 43px; margin-left: -8px; }
+
+/* ---------- Logo strip ---------- */
+.logo-strip { background: var(--surface); padding: 80px 0; }
+.partner-logos { display: flex; align-items: center; justify-content: center; gap: 72px; }
+.partner-logos img { display: block; max-width: none; }
+/* Five 168px logos with 72px gaps need ~1132px; below that the row would spill
+   past the container and make the page scroll sideways, so wrap instead. The 1440px design keeps the single centred row. */
+@media (max-width: 1180px) {
+  .partner-logos { flex-wrap: wrap; gap: 32px 56px; }
+}
+
+/* ---------- Section scaffolding ---------- */
+.section { padding: 96px 0; }
+.section-heading--center { display: flex; flex-direction: column; align-items: center; margin-bottom: 43px; text-align: center; }
+.section-heading h2,
+.growth__copy h2,
+.create__copy h2,
+.testimonials__heading h2 { margin: 0; color: #000; font-size: 44px; font-weight: 600; line-height: 1.2; }
+.growth__copy h2,
+.create__copy h2 { color: var(--text); }
+.section-heading--center h2 { max-width: 700px; }
+.discover .section-heading--center h2 { max-width: 545px; }
+.paths .section-heading--center h2 { max-width: 860px; font-size: 36px; }
+.section-heading--center > p { max-width: 917px; margin: 16px 0 0; color: var(--muted); font-size: 18px; line-height: 1.6; }
+.testimonials__heading > p { max-width: 580px; margin: 0; color: var(--soft); font-size: 18px; line-height: 1.6; }
+.body-copy { margin: 18px 0 0; color: var(--body); font-size: 18px; line-height: 1.6; }
+
+/* ---------- Filter pills ---------- */
+.filter-row { display: flex; flex-direction: column; align-items: center; gap: 24px; margin: 0 auto 80px; }
+.filter-row__line { display: flex; justify-content: center; gap: 16px; }
+/* The design's first row of 8 pills is ~1080px wide; below that, let the pills wrap. */
+@media (max-width: 1180px) {
+  .filter-row { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 24px 16px; }
+  .filter-row__line { display: contents; }
+}
+.filter-row--tight { flex-direction: row; flex-wrap: wrap; align-items: normal; gap: 24px 16px; justify-content: flex-start; max-width: none; margin: 0 0 26px; }
+/* The design spreads the Search chips edge to edge across the container. */
+.search-results .filter-row--tight { gap: 16px; justify-content: space-between; margin-bottom: 76px; }
+/* Once the chips no longer fit on one row (~1200px), the spread alignment
+   leaves a full-width, stretched-looking second row; left-align instead. */
+@media (max-width: 1200px) {
+  .search-results .filter-row--tight { justify-content: flex-start; }
+}
+.filter-pill { white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 24px;
+  background: var(--surface);
+  color: var(--body);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: background 0.16s ease, color 0.16s ease;
+}
+.filter-pill:hover { background: #ececee; color: var(--ink); }
+.filter-pill--active { background: var(--lime); color: var(--ink); font-weight: 500; }
+.filter-pill--more { background: transparent; color: var(--blue); }
+.filter-pill--stars svg { width: 15px; height: 15px; fill: #4b4c53; }
+
+/* ---------- Course card ---------- */
+.course-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.course-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  /* 1px border + 15px padding keeps the 16px inset the design measures from
+     the card's outer edge, so the image fills the full 341px (not 339px). */
+  padding: 15px 15px 19px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: #fff;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.course-card:not(.course-card--decorative):hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(20, 28, 60, 0.09); }
+.course-card__media { position: relative; overflow: hidden; border-radius: 12px; aspect-ratio: 341 / 195; container-type: inline-size; }
+.course-card__media a,
+.course-card__media > span:first-child { display: block; height: 100%; }
+.course-card__image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+/* Pills sized in container units: identical to the design at its 341px media
+   width, and proportionally smaller as cards narrow - so "59 Comments" no
+   longer clips on the three-across grid at ~1000-1100px. */
+.course-card__pills { position: absolute; right: 3.52cqw; bottom: 5.28cqw; left: 3.52cqw; display: flex; gap: 3.52cqw; white-space: nowrap; }
+.course-card__pills > span {
+  padding: 1.76cqw 3.52cqw;
+  border-radius: 7.04cqw;
+  background: rgba(246, 246, 246, 0.6);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  color: var(--soft);
+  font-size: 3.52cqw;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.course-card__body { display: flex; min-width: 0; flex-direction: column; margin-top: 22px; }
+.course-card__title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.course-card__title-row h3 { min-width: 0; margin: 0; overflow: hidden; color: #000; font-size: 20px; font-weight: 600; line-height: 24px; text-overflow: ellipsis; white-space: nowrap; }
+.course-card__title-row h3 a:hover { color: var(--blue); }
+.course-card__rating { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 4px; color: var(--soft); font-size: 18px; line-height: 24px; }
+.course-card__rating svg { width: 20px; height: 20px; fill: var(--border); }
+.course-card__teacher { margin: 1px 0 0; color: var(--soft); font-size: 12px; line-height: 18px; }
+.course-card__teacher a,
+.course-card__teacher > span { color: var(--blue); }
+.course-card__teacher a:hover { text-decoration: underline; }
+.course-card__footer { display: flex; align-items: center; justify-content: flex-start; gap: 12px; margin-top: 13px; }
+.course-card__level { display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; border: 0; border-radius: 24px; background: var(--surface); color: var(--body); font-size: 12px; font-weight: 500; line-height: 20px; }
+.course-card__level svg { width: 20px; height: 20px; color: var(--body); }
+.course-card__price { display: flex; align-items: baseline; gap: 0; margin: 19px 0 0; }
+.course-card__price strong { color: var(--blue); font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 20px; font-weight: 600; line-height: 24px; }
+.course-card__price span { color: var(--soft); font-size: 12px; }
+
+.empty-state { padding: 56px 24px; border: 1px dashed #d2d5da; border-radius: var(--radius-card); background: var(--surface-soft); text-align: center; }
+.empty-state h2 { margin: 0 0 8px; font-size: 24px; }
+.empty-state p { margin: 0 0 20px; color: var(--muted); }
+
+.discover { padding: 72px 0 0; }
+
+/* ---------- Learning paths ---------- */
+.paths { padding: 72px 0 120px; }
+.paths .section-heading--center { margin-bottom: 68px; }
+.path-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 40px; }
+.path-tile {
+  display: flex;
+  aspect-ratio: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: #fff;
+  color: var(--text);
+  text-align: center;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.path-tile:hover { transform: translateY(-3px); border-color: var(--blue); }
+.path-tile__icon { display: grid; width: 60px; height: 60px; place-items: center; border-radius: 50%; background: var(--lime); }
+.path-tile__icon img { width: 42px; height: 42px; }
+.path-tile strong { font-size: 20px; font-weight: 500; line-height: 24px; }
+
+/* ---------- Growth + Create (one #FAFAFA frame with soft glows) ---------- */
+.home-frame {
+  position: relative;
+  overflow: clip;
+  background-color: var(--section-bg);
+  /* Glows: 1137px (or 672px) circles at Figma offsets from the frame's top-left, centred on the 1440 canvas. */
+  background-image:
+    radial-gradient(closest-side, rgba(203, 252, 1, 0.4), rgba(203, 252, 1, 0) 70%),
+    radial-gradient(closest-side, rgba(0, 59, 226, 0.08), rgba(0, 59, 226, 0) 70%),
+    radial-gradient(closest-side, rgba(0, 59, 226, 0.16), rgba(0, 59, 226, 0) 70%),
+    radial-gradient(closest-side, rgba(0, 59, 226, 0.24), rgba(0, 59, 226, 0) 70%),
+    radial-gradient(closest-side, rgba(203, 252, 1, 0.6), rgba(203, 252, 1, 0) 70%);
+  background-repeat: no-repeat;
+  background-size: 1137px 1137px, 1137px 1137px, 1137px 1137px, 1137px 1137px, 672px 672px;
+  background-position:
+    calc(50% + -152px - 151.5px) -466px,
+    calc(50% + 811px - 151.5px) -458px,
+    calc(50% + -508px - 151.5px) 183px,
+    calc(50% + 722px - 151.5px) 788px,
+    calc(50% + -287px - 384px) 946px;
+}
+
+/* ---------- Growth ---------- */
+.growth { overflow-x: clip; padding: 120px 0 32px; }
+.growth__layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; column-gap: 80px; }
+.growth__copy h2 { max-width: 577px; }
+.growth__copy .body-copy { max-width: 477px; margin-top: 40px; color: var(--body); }
+.growth__stats { display: flex; gap: 56px; margin: 40px 0 0; }
+.growth__stats div { display: flex; flex-direction: column-reverse; gap: 0; }
+.growth__stats dt { color: var(--body); font-size: 18px; line-height: 27px; }
+.growth__stats dd { margin: 0; color: var(--blue); font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 36px; font-weight: 500; line-height: 44px; }
+/* The art box is 600 wide and bleeds 40px into the page margin, as in the design. */
+.growth__art { width: auto; margin-right: -32px; }
+@media (min-width: 1304px) { .growth__art { margin-right: -40px; } }
+.growth__card { position: absolute; z-index: 1; top: 0; left: 0; width: 373px; }
+/* The portraits are alpha cut-outs, but each sits in a cropping box (the design
+   frames them tighter than the export). The clip lives on the img via
+   clip-path - not on the wrapper via overflow - so the wrapper's drop-shadow
+   follows the person's silhouette instead of drawing a hard rectangle. */
+.growth__person { filter: drop-shadow(0 28px 36px rgba(20, 24, 50, 0.22)); position: absolute; z-index: 3; top: -108px; left: -89px; width: 817px; height: 780px; }
+.growth__person img { position: absolute; top: 117px; left: 67px; width: 703px; height: 688px; max-width: none; clip-path: inset(3px 140px 145px 53px); }
+.growth__progress { z-index: 4; top: 213px; left: 344px; width: 232px; padding-top: 19px; }
+.growth__progress strong { margin-top: 19px; }
+.growth__progress .progress-line { margin-top: 13px; }
+.growth__squiggle { z-index: 5; }
+
+/* ---------- Create & manage ---------- */
+.create { padding: 32px 0 120px; }
+.create__layout { display: grid; grid-template-columns: minmax(0, 561fr) minmax(0, 579fr); align-items: center; column-gap: 60px; }
+.create__person { filter: drop-shadow(0 28px 36px rgba(20, 24, 50, 0.2)); position: absolute; z-index: 3; top: -120px; left: -92px; width: 675px; height: 836px; }
+.create__person img { position: absolute; top: 118px; left: 100px; width: 579px; height: 719px; max-width: none; clip-path: inset(2px 124px 121px 20px); }
+.create__squiggle { z-index: 4; }
+.revenue-card { position: absolute; z-index: 2; display: flex; flex-direction: column; padding: 16px; border-radius: 16px; background: var(--blue); color: var(--surface); white-space: nowrap; }
+.revenue-card small { font-size: 16px; font-weight: 500; line-height: 19px; }
+.revenue-card > span:not(.revenue-card__delta):not(.progress-line) { color: var(--surface); font-size: 10px; line-height: 12px; }
+.revenue-card strong { margin-top: 7px; font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 24px; font-weight: 500; line-height: 28px; }
+.revenue-card .progress-line { margin-top: 10px; background: #fff; }
+.revenue-card--month { top: 46px; left: 1px; width: 219px; }
+.revenue-card--year { top: 196px; left: 1px; width: 134px; }
+.revenue-card__delta { align-self: flex-start; margin-top: 10px; padding: 4px 8px; border-radius: 999px; background: var(--lime); color: var(--text); font-size: 10px; line-height: 14px; }
+.create__students { z-index: 4; top: 414px; left: 283px; width: 258px; }
+.create__copy h2 { max-width: 420px; }
+.create__copy .body-copy { max-width: 580px; margin-top: 40px; }
+.create__copy .body-copy strong { color: var(--text); font-weight: 700; }
+.check-list { display: grid; gap: 16px; margin: 42px 0 0; }
+.check-list li { display: flex; align-items: center; gap: 10px; color: var(--text); font-size: 18px; font-weight: 500; line-height: 24px; }
+.check-list svg { width: 22px; height: 22px; flex: 0 0 auto; color: var(--blue); }
+
+/* ---------- Creator CTA ---------- */
+.creator-cta { position: relative; isolation: isolate; overflow: clip; background: var(--blue); color: var(--surface); text-align: center; }
+.creator-cta__stage { z-index: 1; }
+.creator-cta__content { position: absolute; z-index: 4; inset: 0; display: flex; flex-direction: column; align-items: center; padding-top: 85px; }
+.creator-cta h2 { max-width: 710px; margin: 0; color: var(--surface); font-size: 44px; line-height: 1.2; }
+.creator-cta__content p { max-width: 964px; margin: 40px 0; color: var(--surface); font-size: 18px; line-height: 1.6; }
+
+/* ---------- Testimonials ---------- */
+.testimonials {
+  padding: 75px 0 64px;
+  background-color: var(--section-bg);
+  background-image:
+    radial-gradient(closest-side, rgba(203, 252, 1, 0.4), rgba(203, 252, 1, 0) 70%),
+    radial-gradient(closest-side, rgba(203, 252, 1, 0.6), rgba(203, 252, 1, 0) 70%),
+    radial-gradient(closest-side, rgba(0, 59, 226, 0.16), rgba(0, 59, 226, 0) 70%);
+  background-repeat: no-repeat;
+  background-size: 1137px 1137px, 672px 672px, 1137px 1137px;
+  background-position:
+    calc(50% + 842px - 151.5px) -241px,
+    calc(50% + 395px - 384px) -138px,
+    calc(50% + -442px - 151.5px) 149px;
+}
+.testimonials__heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 72px; }
+.testimonials__heading h2 { max-width: 520px; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 40px; }
+.testimonial-card { display: flex; flex-direction: column; padding: 24px; border-radius: 24px; background: #fff; }
+.testimonial-card__avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
+.testimonial-card figcaption { display: flex; flex-direction: column; margin-top: 24px; }
+.testimonial-card figcaption strong { color: #000; font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 20px; font-weight: 600; line-height: 24px; }
+.testimonial-card figcaption span { color: var(--blue); font-size: 18px; line-height: 27px; }
+.testimonial-card blockquote { margin: 24px 0 0; color: var(--soft); font-size: 18px; line-height: 28.8px; }
+
+/* ---------- Footer ---------- */
+.site-footer { position: relative; padding: 70px 0 0; border-top: 1px solid var(--border); background: #fff; color: var(--text); }
+.site-footer .brand { color: var(--text); }
+.footer-top { display: grid; grid-template-columns: 528px 1fr; align-items: start; gap: 92px; }
+.footer-newsletter > p:first-of-type { max-width: 528px; margin: 17px 0 45px; color: var(--text); font-size: 14px; line-height: 21px; }
+.newsletter-form { display: flex; align-items: flex-start; gap: 24px; }
+.newsletter-form input {
+  width: 376px;
+  max-width: 100%;
+  height: 52px;
+  padding: 0 24px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  outline: 0;
+  background: #fff;
+  color: var(--text);
+  font-size: 16px;
+}
+.newsletter-form input::placeholder { color: var(--text); opacity: 1; }
+.newsletter-form input:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.newsletter-form .button { flex: none; }
+.newsletter-error { max-width: 504px; margin: 12px 0 0; }
+.newsletter-message { max-width: 504px; min-height: 38px; margin: 24px 0 0; color: var(--text); font-size: 12px; line-height: 19px; }
+.newsletter-message--sent { color: #285d12; }
+.footer-links { display: grid; grid-template-columns: repeat(3, 167px); justify-content: end; gap: 40px; padding-top: 48px; }
+.footer-links nav { position: relative; display: flex; flex-direction: column; gap: 16px; }
+.footer-links a { color: var(--text); font-size: 14px; line-height: 22.4px; }
+.footer-links a:hover { color: var(--blue); }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 130px; padding: 25px 0 50px; border-top: 1px solid var(--border); color: var(--text); font-size: 12px; line-height: 14px; }
+.footer-bottom div { display: flex; gap: 24px; }
+.footer-bottom a:hover { color: var(--blue); }
+
+
+
+/* ---------- Search page ---------- */
+/* Hero 360 tall: 164 to the h1, 43 line box, 32 to the row, 52 field, 69 below. */
+.search-hero { position: relative; isolation: isolate; overflow: hidden; padding: 164px 0 69px; background: var(--blue); color: #fff; text-align: center; }
+.search-hero__content { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
+.search-hero h1 { margin: 0; font-size: 36px; font-weight: 600; line-height: 1.2; }
+.search-hero .hero-search { margin-top: 32px; }
+.search-results { padding: 72px 0; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px 20px; margin-bottom: 35px; }
+.creator-page-results .toolbar { margin-bottom: 40px; }
+.toolbar__filters { display: flex; flex-wrap: wrap; gap: 16px; }
+.toolbar__button,
+.toolbar__select {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 4px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: #fff;
+  color: var(--body);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.toolbar__button:hover,
+.toolbar__button--active { border-color: var(--blue); color: var(--blue); }
+.toolbar__button svg,
+.toolbar__select svg { width: 24px; height: 24px; flex: 0 0 auto; color: currentColor; }
+.toolbar__select { cursor: pointer; }
+/* field-sizing lets the pill hug the chosen label (as in the design); older browsers size to the longest option. */
+.toolbar__select select { appearance: none; -webkit-appearance: none; field-sizing: content; padding: 0; border: 0; outline: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+/* The select hides its own outline, so the pill carries the focus ring. */
+.toolbar__select:focus-within { outline: 3px solid var(--blue); outline-offset: 3px; }
+.pagination { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 73px; }
+.pagination__page { border: 0; background: transparent; color: var(--text); font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 20px; font-weight: 600; line-height: 24px; }
+.pagination__page:hover { color: var(--blue); }
+.pagination__page.is-active { color: var(--border); }
+.pagination__step { display: inline-flex; min-height: 48px; align-items: center; gap: 4px; padding: 11px 15px; border: 1px solid var(--border); border-radius: 24px; background: #fff; color: var(--body); }
+.pagination__step svg { width: 24px; height: 24px; }
+.pagination__step:disabled { border-color: var(--line); color: var(--border); cursor: not-allowed; }
+
+/* ---------- Course pages ---------- */
+/* One two-column grid: hero text, video, tabs and tab content on the left, the
+   enrolment card on the right. The blue band is a separate backdrop, so the
+   card can overlap its lower edge (band 957px tall in the design). */
+.course-page { position: relative; }
+.course-page__band { position: absolute; z-index: 0; top: 0; right: 0; left: 0; height: 957px; overflow: clip; background: var(--blue); }
+.course-page__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 725fr) minmax(0, 412fr);
+  column-gap: 63px;
+  align-items: start;
+  padding: 171px 0 72px;
+}
+.course-page__main { min-width: 0; grid-column: 1; grid-row: 1; }
+.course-page__share { position: absolute; z-index: 2; top: 172px; right: calc(34px - max(32px, (100vw - 1200px) / 2)); }
+.course-page__share p { position: absolute; top: 100%; right: 0; margin: 6px 0 0; color: #fff; font-size: 14px; white-space: nowrap; }
+.course-page__share p:empty { display: none; }
+.course-hero { color: #fff; }
+.course-hero > .grid-overlay { display: none; }
+.course-hero h1 { width: max-content; max-width: calc(100vw - 64px - 150px); margin: 0; font-size: 35px; font-weight: 600; line-height: 43.2px; }
+.course-hero__subtitle { margin: 8px 0 0; color: var(--surface); font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 20px; font-weight: 600; line-height: 24px; }
+.course-hero__instructor { margin: 24px 0 0; color: #f1f4fe; font-size: 18px; font-weight: 500; line-height: 27px; }
+.course-hero__instructor a { color: var(--lime); }
+.course-hero__instructor a:hover { text-decoration: underline; }
+.course-hero__meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; }
+.course-hero__meta li { display: inline-flex; align-items: center; gap: 8px; padding: 8px 24px; border-radius: 24px; background: #fff; color: var(--text); font-size: 16px; font-weight: 500; line-height: 24px; -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.course-hero__meta svg { width: 24px; height: 24px; color: var(--blue); }
+.course-hero__meta li:first-child svg { width: 20px; height: 20px; margin-right: 4px; }
+
+.course-video { position: relative; width: 720px; max-width: 100%; margin: 60px 0 0 5px; overflow: hidden; border-radius: 24px; background: #dfe2e8; }
+.course-video img { width: 100%; aspect-ratio: 720 / 479; object-fit: cover; }
+/* The poster frame carries the visible play button (baked into the design
+   export); this button is a chrome-less hit area aligned exactly over it, so
+   the page renders one play affordance, not two. The baked control sits 15px
+   right of and 17px below the frame centre on the 720x479 art, so percentage
+   offsets keep the hit area on it at every rendered size. */
+.course-video__play { position: absolute; top: calc(50% + 3.55%); left: calc(50% + 2.08%); width: 104px; height: 104px; padding: 0; border: 0; border-radius: 24px; background: transparent; transform: translate(-50%, -50%); }
+.course-video__play:hover { box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.45); }
+.course-video__notice { position: absolute; right: 16px; bottom: 16px; left: 16px; margin: 0; padding: 8px 16px; border-radius: 12px; background: rgba(36, 37, 40, 0.86); color: #fff; font-size: 14px; text-align: center; }
+.course-video__notice:empty { display: none; }
+
+.course-sidebar { grid-column: 2; grid-row: 1; align-self: start; margin-top: 245px; padding: 40px; border: 1px solid var(--border); border-radius: 24px; background: #fff; color: var(--text); }
+.course-sidebar h2 { margin: 0; font-size: 20px; font-weight: 600; line-height: 24px; }
+.lesson-preview { display: grid; gap: 12px; margin: 24px 0 0; }
+.lesson-preview li { display: grid; grid-template-columns: 34px 195px 1fr; align-items: start; font-size: 16px; line-height: 19.2px; }
+.lesson-preview__number,
+.lesson-preview__title { color: var(--text); font-weight: 500; }
+.lesson-preview__number { font-weight: 400; }
+.lesson-preview__duration { padding-right: 6px; color: var(--blue); text-align: right; font-weight: 400; }
+.lesson-preview__more { margin: 12px 0 0; color: var(--body); font-size: 16px; line-height: 25.6px; }
+.course-sidebar__pitch { margin: 24px 0 0; color: var(--body); font-size: 16px; line-height: 25.6px; }
+.course-sidebar__price { display: flex; align-items: baseline; gap: 0; margin: 24px 0 0; }
+.course-sidebar__price strong { color: var(--blue); font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 36px; font-weight: 600; line-height: 43.2px; }
+.course-sidebar__price span { color: var(--body); font-size: 16px; }
+.course-sidebar__enroll { width: 100%; margin-top: 16px; }
+.course-sidebar__includes { margin-top: 24px !important; }
+.include-list { display: grid; gap: 12px; margin-top: 24px; padding-bottom: 24px; border-bottom: 1px solid #d1d1d1; }
+.include-list li { display: flex; align-items: center; gap: 8px; color: var(--body); font-size: 16px; line-height: 25.6px; }
+.include-list svg { width: 24px; height: 24px; color: var(--blue); }
+.course-sidebar__author { display: flex; align-items: center; gap: 12px; margin-top: 24px; }
+.course-sidebar__author img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; }
+.course-sidebar__author strong { display: block; font-size: 18px; font-weight: 500; line-height: 27px; }
+.course-sidebar__author small { color: var(--body); font-size: 16px; line-height: 24px; }
+.course-sidebar__profile { margin-top: 24px; padding: 8px 16px; color: var(--body); }
+
+.course-tabs { display: flex; gap: 16px; margin-top: 126px; }
+.course-page--lessons .course-tabs,
+.course-page--reviews .course-tabs { margin-top: 135px; }
+.course-tabs a { display: inline-flex; align-items: center; padding: 12px 16px; border-radius: 24px; background: var(--surface); color: var(--body); font-size: 16px; font-weight: 500; line-height: 19px; }
+.course-tabs a:hover { background: #ececee; }
+.course-tabs a.active { background: var(--lime); color: var(--text); }
+.course-tab { margin-top: 40px; }
+.course-tab h2 { margin: 24px 0 24px; color: var(--text); font-size: 20px; font-weight: 600; line-height: 24px; }
+.course-tab h2:first-child { margin-top: 0; }
+.course-tab .body-copy { max-width: 723px; margin: 0 0 26px; font-size: 16px; line-height: 25.6px; }
+.course-tab .body-copy:last-of-type { margin-bottom: 3px; }
+.sneak-peek { display: flex; justify-content: space-between; gap: 16px; }
+.sneak-peek li { min-width: 0; flex: 0 1 167px; }
+.sneak-peek img { width: 100%; height: auto; aspect-ratio: 167 / 125; border-radius: 16px; object-fit: cover; }
+.key-points { display: grid; gap: 12px; }
+.key-points li { display: flex; align-items: center; gap: 8px; color: var(--body); font-size: 16px; line-height: 25.6px; }
+.key-points svg { width: 24px; height: 24px; flex: 0 0 auto; color: var(--blue); }
+.module-list { display: grid; gap: 24px; }
+.module-list li { display: grid; grid-template-columns: 72px 1fr; gap: 12px; align-items: start; }
+.module-list__icon { display: grid; width: 72px; height: 72px; place-items: center; border-radius: 24px; background: var(--lime); color: var(--text); }
+.module-list__icon svg { width: 40px; height: 40px; }
+.module-list strong { display: block; font-size: 16px; font-weight: 500; line-height: 19.2px; }
+.module-list p { margin: 4px 0 0; color: var(--body); font-size: 16px; line-height: 25.6px; }
+.lesson-progress { display: flex; width: 100%; flex-direction: column; margin-top: 24px; padding: 16px; border: 1px solid var(--border); border-radius: 16px; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+.lesson-progress small { font-size: 14px; font-weight: 500; line-height: 17px; }
+.lesson-progress strong { margin: 8px 0 12px; font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 36px; font-weight: 600; line-height: 43px; }
+.lesson-progress .progress-line { background: var(--input-border); }
+
+.rating-summary { display: flex; align-items: center; gap: 24px; margin-top: 24px; padding: 40px; border: 1px solid var(--border); border-radius: 16px; }
+.rating-summary__score { display: flex; flex: none; flex-direction: column; align-items: center; justify-content: center; padding: 40px; border-radius: 8px; background: var(--lime); }
+.rating-summary__score small { font-size: 14px; font-weight: 500; line-height: 17px; }
+.rating-summary__score strong { font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 36px; font-weight: 600; line-height: 43px; }
+.rating-summary__rows { display: grid; min-width: 0; flex: 1; gap: 6px; }
+.rating-summary__rows li { display: grid; grid-template-columns: minmax(0, 282fr) auto 40px; align-items: center; gap: 16px; }
+.rating-summary__track { height: 8px; overflow: hidden; border-radius: 999px; background: var(--input-border); }
+.rating-summary__track span { display: block; height: 100%; border-radius: inherit; background: var(--lime); }
+.rating-summary__stars { display: inline-flex; gap: 4px; color: var(--body); }
+.rating-summary__stars svg { width: 24px; height: 24px; }
+.rating-summary__count { color: var(--body); font-size: 16px; text-align: right; }
+.course-tab .reviews-heading { margin: 24px 0 26px; font-size: 20px; line-height: 24px; }
+.course-tab .filter-row--tight { margin: 0 0 24px; }
+.filter-pill--stars svg { width: 24px; height: 24px; fill: var(--body); }
+.review-list { display: grid; gap: 24px; }
+.review-card { display: flex; flex-direction: column; gap: 24px; padding: 40px; border: 1px solid var(--border); border-radius: 24px; }
+.review-card__top { display: grid; grid-template-columns: 52px 1fr auto; align-items: center; gap: 12px; }
+.review-card__top img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; }
+.review-card__top strong { display: block; font-size: 18px; font-weight: 500; line-height: 27px; }
+.review-card__top small { color: var(--body); font-size: 16px; line-height: 24px; }
+.review-card__ago { align-self: start; color: var(--body); font-size: 16px; line-height: 24px; }
+.review-card__stars { display: flex; gap: 4px; margin: 0; color: var(--body); }
+.review-card__stars svg { width: 24px; height: 24px; }
+.review-card__quote { margin: 0; color: var(--body); font-size: 16px; line-height: 25.6px; }
+
+/* ---------- Creator page ---------- */
+.creator-hero { position: relative; isolation: isolate; overflow: hidden; padding: 172px 0 83px; background: var(--blue); color: #fff; }
+.creator-hero__content { position: relative; z-index: 2; }
+.creator-hero__identity { display: flex; align-items: flex-start; gap: 24px; }
+.creator-hero__identity > img { width: 96px; height: 96px; flex: none; border-radius: 24px; object-fit: cover; }
+.creator-hero__identity > div { margin-top: 8px; }
+.creator-hero__title { display: flex; align-items: center; gap: 12px; }
+.creator-hero__name { margin: 0; font-family: var(--font-display); letter-spacing: -0.0125em; font-size: 35px; font-weight: 600; line-height: 43.2px; }
+.creator-hero__badge { padding: 8px 24px; border-radius: 24px; background: var(--lime); color: var(--text); font-family: var(--font-body); font-size: 16px; font-weight: 500; line-height: 19px; }
+.creator-hero__tagline { margin: 8px 0 0; font-size: 18px; line-height: 27px; }
+.creator-hero__bio { margin-top: 40px; }
+.creator-hero__bio p { margin: 0; color: var(--surface); font-size: 18px; line-height: 28.8px; }
+.creator-hero__footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 40px; }
+.creator-hero__stats { display: flex; margin: 0; gap: 16px; }
+.creator-hero__stats span { display: inline-flex; align-items: baseline; gap: 6px; padding: 12px 24px; border-radius: 24px; background: #fff; color: var(--text); font-size: 18px; font-weight: 500; line-height: 21.6px; }
+.creator-hero__stats strong { color: var(--blue); font-weight: 500; }
+.creator-page-results { padding-top: 62px; }
+
+/* ---------- Auth ---------- */
+.auth { position: relative; isolation: isolate; min-height: 100vh; overflow: hidden; background: var(--blue); color: #fff; }
+.auth__top { position: relative; z-index: 2; display: flex; height: 102px; align-items: center; }
+/* 18px + the 784px card + a 120px tail reproduces the design's 1024px canvas. */
+/* `minmax(0,1fr)` keeps the two columns equal: a bare `1fr` would let the
+   579px card widen its own track, which then shrinks the collage stage. */
+.auth__layout { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 60px; padding: 18px 0 120px; }
+.auth__intro { position: relative; }
+.auth__eyebrow { margin: 0; color: var(--surface); font-size: 20px; font-weight: 600; line-height: 24px; }
+.auth__lede { max-width: 475px; margin: 16px 0 0; color: var(--surface); font-size: 18px; line-height: 28.8px; }
+/* The collage is a fixed 560x611 design stage. `left`/`right` size its box to
+   exactly 560px inside the 1440px column (so the art stays unscaled and lands on
+   the design's pixels), and let it shrink with the column below that instead of
+   overflowing into the card. */
+.auth__collage { position: absolute; top: 160px; right: 35px; left: -25px; width: auto; }
+.auth__stack { position: absolute; width: 373px; }
+/* Z-order: back card lowest, the lime pyramid in front of it, the front card
+   above that, the torus ring over the front card, the students card above, and
+   the white squiggle (the spring) over both cards. */
+.auth__stack--back { z-index: 1; }
+.auth__shape--pyramid { z-index: 2; }
+.auth__shape--squiggle { z-index: 6; }
+.auth__stack--front { z-index: 3; }
+.auth__shape--torus { z-index: 4; }
+.auth__happy { position: absolute; z-index: 5; display: flex; width: 259px; flex-direction: column; padding: 19px 16px 16px; border-radius: 16px; background: var(--lime); color: var(--text); }
+.auth__happy strong { font-size: 16px; font-weight: 500; line-height: 19px; }
+.auth__happy small { display: flex; align-items: center; gap: 4px; margin-top: 3px; color: var(--muted); font-size: 10px; line-height: 13px; }
+.auth__happy small b { color: var(--text); font-weight: 700; }
+.auth__happy small span { color: #424348; }
+.auth__happy small svg { width: 16px; height: 16px; fill: var(--blue); }
+.auth__happy .avatar-stack { margin-top: 10px; }
+/* The design's 232px row is wider than the card's 227px content box, so the
+   circles must not shrink to fit it. */
+.auth__happy .avatar-stack img,
+.auth__happy .avatar-stack__count { width: 43px; height: 43px; flex: 0 0 auto; margin-left: -16px; border: 0; }
+.auth__happy .avatar-stack img:first-child { margin-left: 0; }
+.auth__happy .avatar-stack__count { background: var(--text); color: #fff; font-size: 12px; font-weight: 700; }
+/* The collage's course cards match the Happy Students card: dark count chip,
+   lime rating star (the global card styles are grey/lime-inverted). */
+.auth__collage .avatar-stack__count { background: var(--text); color: #fff; }
+.auth__collage .course-card__rating svg { fill: var(--lime); }
+.auth__card { display: flex; width: 100%; flex-direction: column; padding: 40px 28px 36px; border-radius: 24px; background: #fff; color: var(--text); }
+.auth__card-eyebrow { margin: 0; color: var(--blue); font-size: 18px; font-weight: 400; line-height: 24px; }
+.auth__card h2 { margin: 5px 0 37px; color: var(--text); font-size: 44px; line-height: 52.8px; }
+.auth__form { display: flex; flex-direction: column; gap: 22px; }
+/* The design's 579x784 card only applies once the layout is side by side. */
+@media (min-width: 961px) {
+  .auth__card { justify-self: end; min-height: 784px; padding: 62px 63px 40px; }
+}
+/* 579px is 9px wider than the 1440px column; the 60px gap absorbs it. */
+@media (min-width: 1200px) {
+  .auth__card { width: 579px; }
+}
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field label { color: var(--text); font-size: 14px; font-weight: 500; line-height: 19px; }
+.field input { width: 100%; height: 52px; padding: 12px 24px; border: 1px solid var(--input-border); border-radius: 12px; outline: 0; background: #fff; color: var(--text); font-size: 18px; }
+.field input::placeholder { color: var(--muted); }
+.field input:focus { border-color: #879cea; box-shadow: 0 0 0 3px rgba(0, 59, 226, 0.1); }
+.field input[aria-invalid='true'] { border-color: #d64545; }
+.field__wrap { position: relative; }
+.field__wrap input { padding-right: 60px; }
+.field__toggle { position: absolute; top: 50%; right: 6px; display: grid; width: 40px; height: 40px; place-items: center; border: 0; border-radius: 10px; background: transparent; color: var(--muted); transform: translateY(-50%); }
+.field__toggle svg { width: 22px; height: 22px; }
+.field__error { margin: 0; color: #c02c2c; font-size: 14px; }
+.auth__actions { display: flex; justify-content: flex-end; margin-top: 3px; }
+.auth__divider { display: flex; width: 439px; max-width: 100%; align-items: center; gap: 8px; margin: 52px 0 20px; color: var(--text); font-size: 16px; line-height: 25.6px; }
+.auth__divider::before,
+.auth__divider::after { flex: 1; height: 1px; background: var(--border); content: ''; }
+.auth__social { display: flex; justify-content: center; gap: 17px; }
+.auth__social-button { display: grid; width: 72px; height: 72px; place-items: center; padding: 0; border: 1px solid var(--border); border-radius: 24px; background: #fff; }
+.auth__social-button:hover { border-color: var(--blue); }
+.auth__social-button img { width: 40px; height: 40px; }
+.auth__demo { margin: 0; }
+.auth__notice { margin: 16px 0 0; color: var(--blue); font-size: 14px; text-align: center; }
+.auth__success { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 20px 0 30px; }
+.auth__success-icon { display: grid; width: 56px; height: 56px; place-items: center; border-radius: 50%; background: var(--lime); color: var(--ink); }
+.auth__success-icon svg { width: 26px; height: 26px; }
+.auth__success h3 { margin: 6px 0 0; font-size: 24px; }
+.auth__success p { margin: 0 0 10px; color: var(--muted); font-size: 15px; line-height: 1.6; }
+/* `margin-top:auto` keeps the line at the card's foot, as the design does. */
+.auth__switch { margin: auto 0 0; padding-top: 40px; color: var(--body); font-size: 16px; line-height: 25.6px; text-align: center; }
+.auth__switch a { color: var(--blue); }
+.auth__switch a:hover { text-decoration: underline; }
+
+/* ---------- Not found ---------- */
+.not-found { position: relative; isolation: isolate; overflow: hidden; min-height: 960px; background: var(--blue); color: #fff; }
+.not-found__content { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; padding-top: 160px; text-align: center; }
+.not-found__code {
+  margin: 0 0 -119px;
+  /* The design fades the numerals to an olive tone (lime at ~60% opacity over
+     the blue), not to nothing - a full fade erased the glyphs' lower third. */
+  background: linear-gradient(180deg, var(--lime) 25%, rgba(212, 251, 32, 0.6) 92%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: var(--font-display);
+  font-size: 480px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 480px;
+}
+.not-found h1 { position: relative; max-width: 935px; margin: 0; font-size: 72px; font-weight: 600; line-height: 86.4px; }
+.not-found__content > p:not(.not-found__code) { max-width: 620px; margin: 32px 0; color: var(--surface); font-size: 18px; line-height: 28.8px; }
+
+/* ---------- Legal ---------- */
+.legal-hero { position: relative; isolation: isolate; overflow: hidden; padding: 172px 0 80px; background: var(--blue); color: #fff; }
+.legal-hero__content { position: relative; z-index: 2; }
+.legal-hero h1 { margin: 0; font-size: 36px; line-height: 43.2px; }
+.legal-hero p { max-width: 640px; margin: 16px 0 0; color: var(--surface); font-size: 18px; line-height: 28.8px; }
+.legal { padding: 72px 0; }
+.legal__body { display: grid; gap: 40px; }
+.legal__body article { max-width: 820px; }
+.legal__body h2 { color: var(--text); font-size: 20px; line-height: 24px; }
+.legal__body p { margin: 16px 0 0; color: var(--body); font-size: 16px; line-height: 25.6px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1180px) {
+  .site-nav { gap: 32px; }
+}
+
+@media (max-width: 960px) {
+  :root { --header: 88px; }
+  .container { width: min(100% - 48px, 780px); }
+  .site-nav { position: absolute; transform: none; top: 86px; right: 24px; left: 24px; display: none; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; padding: 10px 22px 20px; border-radius: 20px; background: #082ea9; box-shadow: 0 22px 40px rgba(0, 0, 0, 0.28); }
+  .site-nav--open { display: flex; }
+  .site-nav > a { padding: 16px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+  .site-nav__mobile-auth { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; }
+  .site-nav__cart { display: grid; width: 44px; height: 44px; place-items: center; border: 0; background: transparent; color: #f5f5f6; }
+  .site-nav__cart svg { width: 24px; height: 24px; }
+  .site-nav__notice { display: block; margin: 8px 0 0; color: rgba(245, 245, 246, 0.85); font-size: 13px; }
+  .site-nav__notice:empty { display: none; }
+  .site-header__toggle { display: grid; margin-left: auto; }
+  .site-header__actions { display: none; }
+  .site-header__notice { display: none; }
+  .section { padding: 72px 0; }
+  /* Stacked: hero (with video) on blue, then the enrolment card, then the tabs. */
+  .course-page__band { display: none; }
+  .course-page__grid { grid-template-columns: minmax(0, 1fr); row-gap: 0; padding: 0 0 56px; }
+  .course-page__main { display: contents; }
+  .course-hero h1 { width: auto; max-width: none; }
+  .course-hero { position: relative; order: 1; margin-inline: -24px; padding: 120px 24px 40px; background: var(--blue); }
+  .course-hero > .grid-overlay { display: block; }
+  .course-hero > :not(.grid-overlay) { position: relative; z-index: 1; }
+  .course-page__share { top: auto; right: auto; margin-top: 20px; }
+  .course-page__share p { position: static; }
+  .course-video { width: 100%; margin: 32px 0 0; }
+  .course-sidebar { grid-column: auto; grid-row: auto; order: 2; margin: 40px 0 0; padding: 32px; }
+  .course-tabs { order: 3; margin-top: 40px; }
+  .course-page__main > .course-tab { order: 4; }
+  .sneak-peek { flex-wrap: wrap; justify-content: flex-start; }
+  .sneak-peek li { flex: 1 1 calc(50% - 8px); }
+  .auth { padding-bottom: 0; }
+  .auth__layout { grid-template-columns: 1fr; gap: 30px; padding: 8px 0 40px; }
+  .auth__collage { display: none; }
+  .auth__card { justify-self: stretch; }
+  .not-found { min-height: auto; padding-bottom: 72px; }
+  .not-found__content { padding-top: 130px; }
+  /* Fluid between the phone and desktop sizes so the numerals do not dominate
+     mid-width screens (the headline stays the focus). */
+  .not-found__code { font-size: clamp(140px, 30vw, 300px); line-height: clamp(140px, 30vw, 300px); margin-bottom: -74px; }
+  /* The desktop wrap matches the design's unbalanced two lines; below the
+     breakpoint the heading wraps to three, so balance it there. */
+  .not-found h1 { text-wrap: balance; }
+  .not-found h1 { font-size: 44px; line-height: 1.2; }
+}
+
+@media (max-width: 720px) {
+  :root { --header: 76px; }
+  .container { width: min(100% - 32px, 560px); }
+  .site-nav > a { font-size: 15px; }
+  .section { padding: 56px 0; }
+  .search-hero { padding: 130px 0 54px; }
+  .search-hero h1 { font-size: 28px; }
+  .toolbar { flex-direction: column; align-items: stretch; }
+  .toolbar__select--sort { align-self: flex-start; }
+  .course-hero { margin-inline: -16px; padding: 108px 16px 32px; }
+  .course-hero h1 { font-size: 26px; line-height: 1.2; }
+  .course-hero__subtitle { font-size: 17px; }
+  .course-hero__meta { gap: 8px; }
+  .course-hero__meta li { padding: 6px 14px; font-size: 14px; }
+  .course-video__play { width: 64px; height: 64px; border-radius: 16px; }
+  .course-sidebar { padding: 24px 20px; }
+  .lesson-preview li { grid-template-columns: 30px minmax(0, 1fr) auto; column-gap: 8px; }
+  .course-sidebar__price strong { font-size: 30px; }
+  .course-tabs { overflow-x: auto; }
+  .module-list li { grid-template-columns: 56px 1fr; }
+  .module-list__icon { width: 56px; height: 56px; border-radius: 16px; }
+  .module-list__icon svg { width: 32px; height: 32px; }
+  .rating-summary { flex-direction: column; align-items: stretch; padding: 24px; }
+  .rating-summary__score { padding: 20px; }
+  .rating-summary__rows li { grid-template-columns: minmax(0, 1fr) auto 32px; gap: 10px; }
+  .rating-summary__stars svg { width: 16px; height: 16px; }
+  .review-card { padding: 20px; }
+  .review-card__top { grid-template-columns: 44px 1fr; row-gap: 6px; }
+  .review-card__top img { width: 44px; height: 44px; }
+  .review-card__ago { grid-column: 2; }
+  .creator-hero { padding-top: 128px; }
+  .creator-hero__identity { gap: 18px; }
+  .creator-hero__identity > img { width: 68px; height: 68px; border-radius: 16px; }
+  .creator-hero__identity > div { margin-top: 0; }
+  .creator-hero__title { flex-wrap: wrap; gap: 10px; }
+  .creator-hero__name { font-size: 26px; line-height: 1.2; }
+  .creator-hero__badge { padding: 6px 14px; font-size: 14px; }
+  .creator-hero__tagline { font-size: 15px; }
+  .creator-hero__bio p { font-size: 16px; line-height: 1.6; }
+  .creator-hero__bio { margin-top: 28px; }
+  .creator-hero__footer { flex-direction: column; align-items: flex-start; gap: 24px; margin-top: 32px; }
+  .creator-hero__stats { flex-flow: row wrap; gap: 8px; }
+  .creator-hero__stats span { padding: 10px 18px; font-size: 16px; }
+  .auth__top { height: 68px; }
+  .auth__eyebrow { font-size: 17px; }
+  .auth__lede { font-size: 15px; }
+  .auth__card { padding: 30px 22px 26px; border-radius: 22px; }
+  .auth__card h2 { margin-bottom: 26px; font-size: 30px; line-height: 1.2; }
+  .auth__card-eyebrow { font-size: 15px; }
+  .auth__form { gap: 20px; }
+  .field input { height: 54px; padding: 12px 18px; }
+  .auth__divider { width: 100%; margin: 32px 0 16px; }
+  .auth__social-button { width: 58px; height: 58px; border-radius: 20px; }
+  .auth__social-button img { width: 34px; height: 34px; }
+  .not-found { padding-bottom: 56px; }
+  .not-found__content { padding-top: 112px; }
+  .not-found__code { font-size: 140px; line-height: 140px; margin-bottom: -30px; }
+  .not-found h1 { font-size: 30px; }
+  .not-found__content > p:not(.not-found__code) { font-size: 15px; }
+  .legal-hero { padding-top: 128px; }
+  .legal-hero h1 { font-size: 30px; }
+  .legal { padding: 48px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- Home: responsive ---------- */
+@media (max-width: 1180px) {
+  .path-grid { gap: 24px; }
+  .path-tile strong { font-size: 18px; }
+  .footer-top { grid-template-columns: minmax(0, 1fr) auto; gap: 48px; }
+  .footer-links { grid-template-columns: repeat(3, 150px); gap: 24px; }
+  /* The long course title is width:max-content to stay on one line at the
+     design width; below ~1200px the two columns squeeze and it would overflow
+     its track, so let it wrap instead. */
+  .course-hero h1 { width: auto; max-width: 100%; }
+  /* Same for the auth collage, minus the course-card pills: at these widths
+     their scaled 12px type renders under 10px, and the metadata is noise on
+     decorative cards anyway. */
+  .auth__collage .course-card__pills { display: none; }
+}
+
+/* The hero stage scales as one unit between its 1440px design width and the
+   960px restack point, which shrinks its smallest labels towards illegibility.
+   Counter-scale the card text (max() pins the rendered size once the stage
+   scale drops), with matching line-heights so wrapped lines keep their gap.
+   Scoped to the transform range: below 960px the hero restacks and renders at
+   literal sizes, where this rule would blow the text up instead. */
+@media (min-width: 961px) and (max-width: 1180px) {
+  .hero__stage .float-card strong { font-size: max(16px, calc(16px / var(--s, 1))); line-height: max(19px, calc(19px / var(--s, 1))); }
+  .hero__stage .float-card--progress strong { font-size: max(48px, calc(48px / var(--s, 1))); line-height: max(48px, calc(48px / var(--s, 1))); }
+  .hero__stage .float-card small { font-size: max(12px, calc(12px / var(--s, 1))); line-height: max(15px, calc(15px / var(--s, 1))); }
+  .hero__stage .float-card--progress small { font-size: max(14px, calc(14px / var(--s, 1))); line-height: max(17px, calc(17px / var(--s, 1))); }
+  .hero__stage .avatar-stack__count { font-size: max(12px, calc(12px / var(--s, 1))); }
+  .auth__happy strong { font-size: max(16px, calc(16px / var(--s, 1))); line-height: max(19px, calc(19px / var(--s, 1))); }
+  .auth__happy small { font-size: max(10px, calc(10px / var(--s, 1))); line-height: max(13px, calc(13px / var(--s, 1))); }
+  .auth__happy .avatar-stack__count { font-size: max(12px, calc(12px / var(--s, 1))); }
+}
+
+/* Body copy inside the hero and CTA stages keeps at least ~16px of rendered size
+   as the stage scales down (a no-op at the 1440px design width, where --s is 1).
+   The CTA paragraph widens in step so it does not gain a line and overflow the frame. */
+@media (min-width: 961px) {
+  .hero__intro { font-size: max(18px, calc(16px / var(--s, 1))); }
+  .hero-search__field input { font-size: max(18px, calc(16px / var(--s, 1))); }
+  .creator-cta__content p { max-width: max(964px, calc(800px / var(--s, 1))); font-size: max(18px, calc(16px / var(--s, 1))); }
+  .hero__stage .button,
+  .creator-cta__stage .button { font-size: max(18px, calc(16px / var(--s, 1))); }
+}
+
+@media (max-width: 960px) {
+  /* The stages drop their fixed design size: hero and CTA stack, with the art below the text. */
+  .hero .stage,
+  .creator-cta .stage { height: auto; }
+  .hero .stage__inner,
+  .creator-cta .stage__inner { position: relative; left: auto; width: auto; height: auto; transform: none; }
+  .ornament {
+    left: var(--mx, calc(var(--x) * 1px));
+    top: var(--my, calc(var(--y) * 1px));
+    width: var(--mw, calc(var(--w) * 1px));
+    height: var(--mh, var(--mw, calc(var(--h, var(--w)) * 1px)));
+    display: var(--md, block);
+  }
+
+  .hero__stage { --pw: min(86vw, 480px); }
+  .hero__content { position: relative; top: auto; padding: 132px 24px 0; }
+  .hero h1 { font-size: clamp(32px, 8vw, 60px); }
+  .hero__intro { margin-top: 20px; font-size: 17px; }
+  .hero-search { width: 100%; max-width: 581px; margin-top: 32px; }
+  .hero-search__field { flex: 1; width: auto; }
+  .hero__art { position: relative; inset: auto; height: calc(var(--pw) * 0.936 * 0.95); margin-top: 48px; }
+  .hero__person { top: auto; height: auto; bottom: calc(var(--pw) * -0.05); left: 50%; width: calc(var(--pw) * 1.25); transform: translateX(-50%); }
+  .hero__ring {
+    --ring: min(150vw, 1149px);
+    top: calc(100% - var(--pw) * 0.936 * 0.82);
+    left: 50%;
+    width: var(--ring);
+    height: var(--ring);
+    margin-left: calc(var(--ring) / -2);
+    border-width: calc(var(--ring) * 0.2785);
+  }
+  .hero__card--theme { top: 14%; left: 3%; width: 208px; }
+  /* Full-size cards collide on a ~500px viewport (progress top-right meets
+     students bottom-left), so shrink both a little in the 481-720 range. */
+  .hero__card--progress { top: 24%; right: 16px; left: auto; transform: scale(0.8); transform-origin: top right; }
+  .hero__card--students { top: auto; bottom: 8%; left: 16px; transform: scale(0.8); transform-origin: bottom left; }
+
+  .logo-strip { padding: 48px 0; }
+  .partner-logos { flex-wrap: wrap; gap: 24px 40px; }
+  .partner-logos img { width: auto; height: 32px; }
+
+  .section { padding: 72px 0; }
+  .section-heading h2,
+  .growth__copy h2,
+  .create__copy h2,
+  .testimonials__heading h2 { font-size: 36px; }
+  .discover { padding-top: 64px; }
+  .paths { padding: 64px 0 72px; }
+  .filter-row { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 24px 16px; }
+  .filter-row__line { display: contents; }
+  .course-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .path-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  .growth { padding: 72px 0 24px; }
+  .create { padding: 24px 0 72px; }
+  .growth__layout,
+  .create__layout { grid-template-columns: minmax(0, 1fr); row-gap: 48px; }
+  .create__copy { order: -1; }
+  /* `width:100%` is required: with `width:auto` plus the auto inline margins
+     below, a grid item with no in-flow children shrink-to-fits to 0, which
+     makes <Stage> read a 0px box and fall back to scale 1 - drawing the
+     composition at full size and cropping it instead of scaling it down. */
+  .growth__art,
+  .create__art { width: 100%; max-width: 600px; margin-inline: auto; }
+
+  .creator-cta__content { position: relative; inset: auto; padding: 150px 24px 140px; }
+  .creator-cta h2 { font-size: 36px; }
+  .creator-cta__content p { margin: 24px 0 32px; }
+
+  .testimonials { padding: 64px 0 56px; }
+  .testimonials__heading { flex-direction: column; align-items: flex-start; gap: 24px; margin-bottom: 48px; }
+  .testimonial-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+
+  .footer-top { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .footer-links { grid-template-columns: repeat(3, minmax(0, 167px)); justify-content: start; padding-top: 0; }
+  .footer-bottom { margin-top: 56px; }
+}
+
+@media (min-width: 721px) {
+  /* Squares on the six-across and three-across grids only. */
+  .path-tile { aspect-ratio: 1; }
+}
+
+@media (max-width: 720px) {
+  .hero__content { padding: 108px 16px 0; }
+  .hero-search__field { height: 48px; padding: 0 16px; }
+  .hero-search { gap: 8px; }
+  .hero-search > .button { padding: 12px 20px; }
+  .partner-logos { gap: 20px 28px; }
+  .partner-logos img { height: 28px; }
+  .section { padding: 56px 0; }
+  .section-heading h2,
+  .growth__copy h2,
+  .create__copy h2,
+  .testimonials__heading h2 { font-size: 28px; }
+  .paths .section-heading--center h2 { font-size: 26px; }
+  .section-heading--center > p,
+  .testimonials__heading > p,
+  .body-copy { font-size: 16px; }
+  .section-heading--center { margin-bottom: 32px; }
+  .paths .section-heading--center { margin-bottom: 32px; }
+  /* One swipeable row of pills instead of seven wrapped rows. */
+  .filter-row,
+  .filter-row--tight {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-width: none;
+    margin: 0 -16px 32px;
+    padding: 0 16px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  .filter-row::-webkit-scrollbar { display: none; }
+  /* Keep the Search chips a scroller rather than the desktop's spread row. */
+  .search-results .filter-row--tight { justify-content: flex-start; margin-bottom: 32px; }
+  .filter-pill { flex: none; scroll-snap-align: start; }
+  .course-grid { grid-template-columns: minmax(0, 1fr); }
+  .path-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .path-tile { padding: 24px 8px; gap: 12px; }
+  .path-tile strong { font-size: 16px; }
+  .growth__stats { gap: 32px; }
+  .growth__stats dd { font-size: 32px; }
+  .growth__stats dt { font-size: 16px; }
+  .check-list li { font-size: 16px; }
+  .creator-cta__content { padding: 130px 16px 130px; }
+  .creator-cta h2 { font-size: 28px; }
+  .creator-cta__content p { font-size: 16px; }
+  .testimonial-card { padding: 20px; }
+  .site-footer { padding-top: 48px; }
+  .footer-newsletter > p:first-of-type { margin-bottom: 28px; }
+  .newsletter-form { gap: 12px; }
+  .newsletter-form input { flex: 1; width: auto; min-width: 0; padding: 0 16px; }
+  .footer-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 40px; padding-bottom: 32px; }
+  .footer-bottom div { flex-wrap: wrap; gap: 8px 24px; }
+}
+
+@media (max-width: 480px) {
+  .hero__card--theme { display: none; }
+  /* Both cards drop below the portrait's face instead of covering it, and
+     shrink a little more than before so they fit side by side. */
+  .hero__card--progress,
+  .hero__card--students { transform: scale(0.6); }
+  .hero__card--progress { top: auto; bottom: 4%; right: 8px; transform-origin: bottom right; }
+  .hero__card--students { bottom: 10%; left: 8px; transform-origin: bottom left; }
+}
+
+/* ---------- Narrow phones: static restages of the scaled stage art ----------
+   The Growth/Create compositions scale everything together, shrinking their
+   ~10px labels to ~6px; below 480px the stages swap to these larger, simpler
+   arrangements (see Stage's `mobile` prop). */
+@media (max-width: 480px) {
+  .stage:has(> .stage__mobile) { height: auto; }
+  .growth__m-art { position: relative; height: 320px; max-width: 380px; margin-inline: auto; }
+  .growth__m-card { position: absolute; z-index: 1; top: 0; left: 0; width: 250px; }
+  .growth__m-person { position: absolute; z-index: 2; top: 26px; right: 0; width: 200px; height: 250px; filter: drop-shadow(0 16px 22px rgba(20, 24, 50, 0.22)); }
+  .growth__m-person img { position: absolute; top: -1px; left: -18px; width: 244px; max-width: none; clip-path: inset(0.4% 10.4% 21% 7.5%); }
+  .growth__m-progress { z-index: 3; top: auto; right: 8px; bottom: 0; left: auto; width: 208px; }
+  .growth__m-progress strong { margin-top: 8px; font-size: 32px; line-height: 32px; }
+  .create__m-art { position: relative; height: 370px; max-width: 360px; margin-inline: auto; }
+  .create__m-revenue { top: 0; left: 0; width: 210px; }
+  .create__m-person { position: absolute; z-index: 2; top: 44px; right: 0; width: 220px; height: 310px; filter: drop-shadow(0 16px 22px rgba(20, 24, 50, 0.2)); }
+  .create__m-person img { position: absolute; top: -1px; left: -10px; width: 293px; max-width: none; clip-path: inset(0.3% 21.4% 16.8% 3.5%); }
+  .create__m-students { z-index: 3; top: auto; right: 0; bottom: 0; left: auto; width: 236px; }
+}
+
+/* ---------- Touch: 44 x 44 tap targets (WCAG 2.5.5) ----------
+   Desktop visuals are untouched. Inline links grow their hit area with padding
+   that a matching negative margin cancels, so text does not move. */
+@media (pointer: coarse) {
+  .filter-pill,
+  .course-tabs a,
+  .scope-menu__list button { min-height: 44px; }
+  .pagination__page { min-width: 44px; min-height: 44px; }
+  .field__toggle,
+  .site-header__cart { width: 44px; height: 44px; }
+  .brand,
+  .site-header__signin,
+  .site-header__join,
+  .site-nav > a { display: inline-flex; align-items: center; min-height: 44px; }
+  .brand { min-width: 44px; }
+  .course-card__teacher a,
+  .course-hero__instructor a,
+  .site-nav__mobile-auth a,
+  .auth__switch a,
+  .footer-bottom a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+  /* Negative margins hand back the space the taller hit area took: (44 - line-height) / 2. */
+  .course-card__teacher a { margin-block: -13px; }
+  .course-hero__instructor a { margin-block: -8px; }
+  .auth__switch a { margin-block: -9px; }
+  .footer-bottom a { margin-block: -15px; }
+  /* The select fills its pill so the whole pill opens it. */
+  .toolbar__select select { align-self: stretch; padding-inline: 8px 16px; margin-inline: -8px -16px; }
+  /* The title clips with an ellipsis, so it gets height instead of padding. */
+  .course-card__title-row h3 a { display: block; overflow: hidden; text-overflow: ellipsis; line-height: 44px; }
+  .footer-links nav { gap: 0; }
+  .footer-links a { padding-block: 11px; }
+  .footer-bottom div { gap: 0 24px; }
+}

@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+/figma-samples/
+
+# Local workspace metadata; do not publish.
+/.freebuff/
+
+# Browser tooling and test output
+/.playwright-mcp/
+/test-results/
+/playwright-report/

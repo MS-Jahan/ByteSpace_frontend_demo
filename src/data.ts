@@ -507,7 +507,117 @@ const catalogueSeeds: CatalogueSeed[] = [
   { slug: 'brand-identity-design', title: 'Brand Identity Design', categories: ['Graphic Design', 'Design', 'Creative Marketing'], instructor: 'pixelcraft studio', creatorSlug: 'pixelcraft-studio', level: 'Intermediate', rating: 4.5, lessons: 30, duration: '5 hours 5 mins', comments: 71, price: 59, photo: 4, blurb: 'From research and moodboards to a logo, palette and a brand guide clients sign off on.' },
 ]
 
-const catalogueCourses: Course[] = catalogueSeeds.map(({ photo, blurb, ...seed }) => {
+/**
+ * Compact entries that fill the catalogue to 90 courses (five pages of 18, as in
+ * the design's pager). Numbers are derived from the entry's position so the
+ * list stays varied but deterministic.
+ */
+type GeneratedEntry = [title: string, categories: string[], level: 'Beginner' | 'Intermediate' | 'Advanced']
+
+const generatedEntries: GeneratedEntry[] = [
+  ['Sketching for Absolute Beginners', ['Drawing & Painting', 'Design'], 'Beginner'],
+  ['Acrylic Painting Techniques', ['Drawing & Painting', 'Crafts'], 'Intermediate'],
+  ['Character Design Workshop', ['Digital Illustration', 'Animation'], 'Intermediate'],
+  ['Guitar for Beginners', ['Music'], 'Beginner'],
+  ['Mixing and Mastering at Home', ['Music'], 'Advanced'],
+  ['Songwriting Step by Step', ['Music', 'Creative Marketing'], 'Beginner'],
+  ['Short Film Storytelling', ['Film & Video'], 'Intermediate'],
+  ['Video Editing in Premiere Pro', ['Film & Video', 'Animation'], 'Beginner'],
+  ['Cinematic Colour Grading', ['Film & Video', 'Photography'], 'Advanced'],
+  ['Street Photography Basics', ['Photography'], 'Beginner'],
+  ['Lightroom Editing Workflow', ['Photography', 'Design'], 'Intermediate'],
+  ['Product Photography at Home', ['Photography', 'Business'], 'Intermediate'],
+  ['2D Animation Fundamentals', ['Animation', 'Digital Illustration'], 'Beginner'],
+  ['Character Rigging and Motion', ['Animation'], 'Advanced'],
+  ['Explainer Videos That Convert', ['Animation', 'Marketing'], 'Intermediate'],
+  ['Typography Essentials', ['Graphic Design', 'Design'], 'Beginner'],
+  ['Layout and Composition', ['Graphic Design', 'Design'], 'Intermediate'],
+  ['Logo Design from Scratch', ['Graphic Design', 'Creative Marketing'], 'Beginner'],
+  ['UI Design Systems', ['Design', 'Web Development'], 'Advanced'],
+  ['Figma for Product Teams', ['Design', 'IT & Software'], 'Intermediate'],
+  ['Accessible Design Basics', ['Design', 'Web Development'], 'Beginner'],
+  ['HTML and CSS Foundations', ['Web Development', 'Development'], 'Beginner'],
+  ['Modern JavaScript in Depth', ['Web Development', 'Development'], 'Intermediate'],
+  ['React from the Ground Up', ['Web Development', 'Development'], 'Intermediate'],
+  ['TypeScript for Teams', ['Development', 'IT & Software'], 'Advanced'],
+  ['Node.js APIs That Scale', ['Development', 'Web Development'], 'Advanced'],
+  ['SQL for Everyone', ['Data Science', 'IT & Software'], 'Beginner'],
+  ['Git and Collaboration', ['Development', 'IT & Software'], 'Beginner'],
+  ['Cloud Basics for Developers', ['IT & Software', 'Development'], 'Intermediate'],
+  ['Cybersecurity Essentials', ['IT & Software'], 'Beginner'],
+  ['Machine Learning in Practice', ['Data Science', 'Development'], 'Advanced'],
+  ['Data Visualisation with Charts', ['Data Science', 'Design'], 'Intermediate'],
+  ['Statistics Without Tears', ['Data Science'], 'Beginner'],
+  ['Spreadsheet Power Skills', ['Business', 'Productivity'], 'Beginner'],
+  ['Excel Dashboards in a Day', ['Business', 'Data Science'], 'Intermediate'],
+  ['SEO Foundations', ['Marketing', 'Social Media'], 'Beginner'],
+  ['Email Marketing that Works', ['Marketing', 'Creative Marketing'], 'Intermediate'],
+  ['Content Strategy for Creators', ['Marketing', 'Social Media'], 'Intermediate'],
+  ['Short-Form Video for Brands', ['Social Media', 'Film & Video'], 'Beginner'],
+  ['Community Building Online', ['Social Media', 'Business'], 'Intermediate'],
+  ['Copywriting that Sells', ['Marketing', 'Creative Marketing'], 'Intermediate'],
+  ['Growth Marketing Experiments', ['Marketing', 'Business'], 'Advanced'],
+  ['Pricing Your Creative Work', ['Freelance & Entrepreneurship', 'Finance'], 'Beginner'],
+  ['Building a Portfolio Site', ['Freelance & Entrepreneurship', 'Web Development'], 'Beginner'],
+  ['Negotiation for Freelancers', ['Freelance & Entrepreneurship', 'Business'], 'Intermediate'],
+  ['Launching a Side Business', ['Freelance & Entrepreneurship', 'Business'], 'Intermediate'],
+  ['Small Business Accounting', ['Finance', 'Business'], 'Beginner'],
+  ['Investing Basics', ['Finance'], 'Beginner'],
+  ['Budgeting for Creatives', ['Finance', 'Productivity'], 'Beginner'],
+  ['Time Blocking and Deep Work', ['Productivity'], 'Beginner'],
+  ['Project Management Basics', ['Productivity', 'Business'], 'Intermediate'],
+  ['Remote Team Rituals', ['Productivity', 'Business'], 'Advanced'],
+  ['Public Speaking with Confidence', ['Business', 'Productivity'], 'Beginner'],
+  ['Pottery and Ceramics at Home', ['Crafts'], 'Beginner'],
+  ['Knitting Your First Sweater', ['Crafts'], 'Beginner'],
+  ['Woodworking Fundamentals', ['Crafts'], 'Intermediate'],
+  ['Calligraphy and Hand Lettering', ['Crafts', 'Drawing & Painting'], 'Beginner'],
+  ['Bread Baking Basics', ['Cooking'], 'Beginner'],
+  ['Plant-Based Weeknight Dinners', ['Cooking'], 'Beginner'],
+  ['Pastry Techniques', ['Cooking', 'Crafts'], 'Advanced'],
+  ['World Street Food at Home', ['Cooking'], 'Intermediate'],
+  ['Yoga for Desk Workers', ['Sport', 'Productivity'], 'Beginner'],
+  ['Running Your First 10K', ['Sport'], 'Beginner'],
+  ['Strength Training Foundations', ['Sport'], 'Intermediate'],
+  ['Mobility and Injury Prevention', ['Sport'], 'Intermediate'],
+  ['Watercolour Botanicals', ['Drawing & Painting', 'Crafts'], 'Intermediate'],
+  ['Comic Book Storytelling', ['Digital Illustration', 'Drawing & Painting'], 'Intermediate'],
+  ['Concept Art for Games', ['Digital Illustration', 'Animation'], 'Advanced'],
+  ['Vector Illustration in Illustrator', ['Digital Illustration', 'Graphic Design'], 'Intermediate'],
+  ['Packaging Design Workshop', ['Graphic Design', 'Creative Marketing'], 'Advanced'],
+  ['Podcasting from Idea to Launch', ['Music', 'Social Media'], 'Beginner'],
+  ['Data Storytelling for Managers', ['Data Science', 'Business'], 'Intermediate'],
+]
+
+const generatedSeeds: CatalogueSeed[] = generatedEntries.map(([title, categories, level], index) => {
+  const creator =
+    index % 2 === 0
+      ? { instructor: 'nova labs', creatorSlug: 'nova-labs' }
+      : { instructor: 'pixelcraft studio', creatorSlug: 'pixelcraft-studio' }
+  const lessons = 8 + ((index * 7) % 40)
+  const minutes = lessons * 8 + ((index * 13) % 40)
+  const comments = 8 + ((index * 17) % 120)
+  return {
+    slug: title
+      .toLowerCase()
+      .replace(/&/g, 'and')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, ''),
+    title,
+    categories,
+    ...creator,
+    level,
+    rating: 4.0 + ((index * 3) % 10) / 10,
+    lessons,
+    duration: `${Math.floor(minutes / 60)} hour${minutes >= 120 ? 's' : ''} ${minutes % 60} mins`,
+    comments,
+    price: 12 + ((index * 11) % 14) * 5,
+    photo: index % cardPhotos.length,
+    blurb: `A practical, project-led course on ${title.toLowerCase()}, with short lessons you can finish at your own pace.`,
+  }
+})
+
+const catalogueCourses: Course[] = [...catalogueSeeds, ...generatedSeeds].map(({ photo, blurb, ...seed }) => {
   const image = cardPhotos[photo]
   const course = { ...seed, image: image.src, imageAlt: image.alt }
   return {

@@ -52,3 +52,10 @@ describe('course data', () => {
     }
   })
 })
+
+describe('catalogue size', () => {
+  it('fills five pages of 18 for the search pager', async () => {
+    const { courses } = await import('../data')
+    expect(courses).toHaveLength(90)
+  })
+})

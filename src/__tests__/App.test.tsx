@@ -418,7 +418,8 @@ describe('search page', () => {
 
     const pager = screen.getByRole('navigation', { name: /search result pages/i })
     expect(within(pager).getByRole('button', { name: 'Previous page' })).toBeDisabled()
-    expect(within(pager).getByRole('button', { name: 'Next page' })).toBeDisabled()
+    expect(within(pager).getByRole('button', { name: 'Next page' })).toBeEnabled()
+    expect(within(pager).getAllByRole('button', { name: /^\d+$/ })).toHaveLength(5)
     expect(within(pager).getByRole('button', { name: '1' })).toHaveAttribute('aria-current', 'page')
   })
 
